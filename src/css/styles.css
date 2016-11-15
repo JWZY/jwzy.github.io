@@ -20,6 +20,14 @@ header {
     max-width: 1100px;
 }
 
+footer {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+}
+
 i.fa-bars:before {
     font-size: 26px;
 }
@@ -33,12 +41,14 @@ html, body {
     max-width: 100%;
 }
 
+body.noscroll {
+    overflow: hidden;
+}
+
 html {
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .menu-desktop a.active {
@@ -47,10 +57,12 @@ html {
 }
 
 .menu-desktop a:hover {
-    color: #E48929;
+    color: #444;
+    transition: all 0.5s;
 }
 .top-nav {
-    font-weight: 500;
+    font-weight: 400;
+    color: #999;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -62,11 +74,6 @@ a {
 
 a.underline {
     text-decoration: underline;
-}
-
-.selected, .selected a {
-    color: #E48929;
-    font-weight: 600;
 }
 
 b {
@@ -132,8 +139,9 @@ ul {
 
 .menu .menu-desktop div a {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
     padding: 8px 12px;
+    transform: scale(1.05,1);
 }
 
 .menu .menu-desktop .menu-bullet {
@@ -149,7 +157,7 @@ ul {
 
 .menu .menu-object {
     width: 100%;
-    height: 100px;
+    height: 170px;
     text-align: center;
     background-color: white;
     z-index: 1;
@@ -178,7 +186,7 @@ ul {
     overflow: hidden;
 }
 
-.menu .menu-dropdown.menu-dropdown-open body {
+.menu .menu-dropdown.menu-dropdown-open html {
     overflow: hidden;
 }
 
@@ -206,6 +214,18 @@ ul {
 }
 
 .dropdown-text {
+    display: block;
+    font-weight: 500;
+    padding: 5px 12px;
+    transform: scale(1.05,1);
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.selected, .selected a {
+    color: #444;
     font-weight: 600;
 }
 
@@ -235,6 +255,7 @@ main {
     text-align: center;
     margin: auto;
     margin-top: 1em;
+    color: #888;
 }
 
 .image.inline-image {
@@ -256,7 +277,7 @@ div[data-page="work"] a {
 
 h1.title {
     padding: 24px 0;
-    font-size: 200%;
+    font-size: 180%;
     text-align: center;
     width: 100%;
     max-width: 600px;
@@ -331,14 +352,14 @@ div[data-page="about"] .about-content {
     line-height: 2em;
     padding-bottom: 3rem;
     font-size: 1.1em;
+    margin: auto;
 }
 
 .about-content {
     flex: 1;
     width: 80%;
     margin: auto;
-    max-width: 950px;
-    margin-bottom: 2em;
+    max-width: 900px;
 }
 
 .about-desc li {
@@ -361,14 +382,7 @@ div[data-page="about"] .about-content {
 }
 
 .portrait {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 1em;
-    left: 20%;
-    background: url("../img/jesus2.png") center top no-repeat;
-    opacity: 0.2;
-    z-index: -2;
+    border-radius: 2%;
 }
 
 .col-md-4 {
@@ -393,7 +407,7 @@ div[data-page="about"] .about-content {
     margin-bottom: 20px;
     width: 80%;
     line-height: 1.5em;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 .subheader-text {
@@ -462,14 +476,17 @@ i.fa {
     font: normal normal normal 14px/1;
 }
 
-.cheat-box {
+/*.cheat-box {
     position: fixed;
     height: 90px;
     width: 120%;
     background-color: white;
     box-shadow: 0px 0px 10px #999;
     margin-left: -10%;
-}
+}*/
+
+
+/*Rules for desktop specific*/
 
 @media (min-width: 640px) {
     .menu .menu-desktop {
@@ -507,9 +524,9 @@ i.fa {
         cursor: pointer;
         overflow: hidden;
         height: 100%;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
         background-color: black;
-        width: 49%;
+        width: 48%;
         transition: opacity 0.75s;
     }
 
@@ -521,6 +538,10 @@ i.fa {
     .project-wrapper:hover img {
         opacity: 0.3;
         transition: opacity 0.75s;
+    }
+
+    .project-wrapper:first-child {
+        margin-right: 4%;
     }
 
     .tab-nav.page-nav.desktop {
@@ -570,12 +591,12 @@ i.fa {
         text-shadow: 0px 0px 2px #000;
     }
 
-    .project-wrapper:first-child {
-        margin-right: 2%;
-    }
-
     .row {
         justify-content: flex-start;
+    }
+
+    .portrait {
+        border-radius: 50%;
     }
 
     video {

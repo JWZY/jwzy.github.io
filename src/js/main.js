@@ -31,6 +31,7 @@ function main () {
 
     var $menu = document.querySelector('.menu .menu-mobile');
     var $menuDropdown = document.querySelector('.menu .menu-dropdown');
+    var body = document.body;
     
     var currentPageName = window.location.hash.substring(1) || 'work';
 
@@ -51,8 +52,8 @@ function main () {
     });
 
     var titles = {};
-    var titlesNodeList = document.querySelectorAll('.menu div[data-title]');
-    forEach(titlesNodeList, function (title) {
+    var dtNodeList = document.querySelectorAll('.menu-desktop div[data-title]');
+    forEach(dtNodeList, function (title) {
         var name = title.dataset.title;
 
         if (name === currentPageName) {
@@ -68,6 +69,7 @@ function main () {
         e.preventDefault();
         toggleClass($menuDropdown, 'hidden');
         toggleClass($menuDropdown, 'menu-dropdown-open');
+        toggleClass(body, 'noscroll');
     }, false);
 
     window.addEventListener('hashchange', function (e) {
@@ -80,6 +82,7 @@ function main () {
         if (!e.target.closest('.menu-mobile')) {
         addClass($menuDropdown, 'hidden');
         removeClass($menuDropdown, 'menu-dropdown-open');
+        removeClass(body, 'noscroll');
         }
     }, false);
 
