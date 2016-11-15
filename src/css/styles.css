@@ -284,6 +284,16 @@ h1.title {
     margin: 1em auto 1em;
     font-weight: 500;
 }
+h1.ascii {
+    padding: 24px 0;
+    font-size: 500%;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    font-weight: 500;
+    margin: 0 auto 0;
+    color: #bbb;
+}
 
 div[data-page="about"] h1.title {
     margin: 0 auto 1em;
