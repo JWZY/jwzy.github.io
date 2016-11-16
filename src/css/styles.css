@@ -57,12 +57,12 @@ html {
 }
 
 .menu-desktop a:hover {
-    color: #444;
+    color: #197FA3;
     transition: all 0.5s;
 }
 .top-nav {
     font-weight: 400;
-    color: #999;
+    color: #666;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -225,7 +225,7 @@ ul {
 
 
 .selected, .selected a {
-    color: #444;
+    color: #46A9DF;
     font-weight: 600;
 }
 
@@ -429,8 +429,8 @@ div[data-page="about"] .about-content {
 
 .about-content a {
     font-size: 1.1em;
-    font-weight: 600;
-    color: #E48929;
+    font-weight: 500;
+    color: #46A9DF;
 }
 
 .nav-list.social-media li {
