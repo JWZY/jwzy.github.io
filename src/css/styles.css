@@ -284,6 +284,16 @@ h1.title {
     margin: 1em auto 1em;
     font-weight: 500;
 }
+h1.subtitle {
+    padding: 24px 0;
+    font-size: 130%;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: -2em auto 1em;
+    color: #888;
+    font-weight: 400;
+}
 h1.ascii {
     padding: 24px 0;
     font-size: 500%;
@@ -451,7 +461,7 @@ div[data-page="about"] .about-content {
 }
 
 .nav-list.social-media li:hover i:before {
-    color: #bbb;
+    color: #46A9DF;
     transition: all 0.5s;
 }
 
