@@ -1,23 +1,26 @@
-*, *:before, *:after {
+*,:after,:before {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-family: 'Roboto','Helvetica',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #444;
+    color: #444
 }
 
 i:before {
-    font-family: FontAwesome;
+    font-family: FontAwesome
+}
+
+body,header {
+    max-width: 1100px
 }
 
 header {
     position: relative;
     z-index: 100;
-    background-color: white;
-    width: 100%;
-    max-width: 1100px;
+    background-color: #fff;
+    width: 100%
 }
 
 footer {
@@ -25,101 +28,98 @@ footer {
     margin-bottom: 2em;
     text-align: center;
     font-size: 16px;
-    color: #888;
+    color: #888
 }
 
 i.fa-bars:before {
-    font-size: 26px;
+    font-size: 26px
 }
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 500;
-}
-
-html, body {
-    max-width: 100%;
-}
-
-body.noscroll {
-    overflow: hidden;
+    font-weight: 500
 }
 
 html {
+    max-width: 100%;
     height: 100%;
-    padding: 0;
-    margin: 0;
+    padding: 0
+}
+
+.menu .menu-dropdown.menu-dropdown-open html,body.noscroll {
+    overflow: hidden
 }
 
 .menu-desktop a.active {
     text-decoration: underline;
-    color: red;
+    color: red
 }
 
 .menu-desktop a:hover {
-    color: #197FA3;
-    transition: all 0.5s;
+    color: #197fa3;
+    transition: all .5s
 }
+
 .top-nav {
     font-weight: 400;
     color: #666;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2px
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: inherit
 }
 
 a.underline {
-    text-decoration: underline;
+    text-decoration: underline
+}
+
+b,h3 {
+    font-weight: 600
 }
 
 b {
-    font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.1em
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.1rem
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    max-width: 1100px;
     width: 90%;
     margin: 0 auto;
     align-items: stretch;
     line-height: 1.4;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .logo-container {
-    padding: 30px;
-    padding-left: 0;
-    float: left;
+    padding: 30px 30px 30px 0;
+    float: left
 }
 
-ul {
-    margin: 0;
+html,ul {
+    margin: 0
 }
 
 .logo {
     vertical-align: middle;
-    height: 30px;
+    height: 30px
 }
 
 .menu {
     font-size: 90%;
-    position: relative;
+    position: relative
 }
 
 .menu .menu-mobile {
-    background: none;
+    background: 0 0;
     outline: none;
     border: none;
     margin-top: 24px;
@@ -134,60 +134,52 @@ ul {
     flex-wrap: nowrap;
     justify-content: center;
     align-content: flex-start;
-    float: right;
+    float: right
 }
 
 .menu .menu-desktop div a {
     display: block;
     font-weight: 500;
     padding: 8px 12px;
-    transform: scale(1.05,1);
+    transform: scale(1.05,1)
 }
 
 .menu .menu-desktop .menu-bullet {
-    padding: 8px 0;
+    padding: 8px 0
 }
 
 .menu .menu-dropdown {
     position: fixed;
     left: 0;
     top: 90px;
-    z-index: 2;
+    z-index: 2
 }
 
-.menu .menu-object {
+.menu .menu-object,.menu .menu-social {
     width: 100%;
     height: 170px;
     text-align: center;
-    background-color: white;
-    z-index: 1;
+    background-color: #fff;
+    z-index: 1
 }
 
 .menu .menu-social {
-    width: 100%;
-    height: 50px; 
+    height: 50px;
     position: fixed;
-    bottom: 0;
-    text-align: center;
-    background-color: white;
-    z-index: 1;
+    bottom: 0
 }
 
 .menu-social a {
-    margin: 15px auto;
+    margin: 15px auto
 }
 
 .menu-social i:before {
-    font-size: 50px;
+    font-size: 50px
 }
 
 .menu .menu-dropdown.menu-dropdown-open {
-    animation: fadeInAndDown 0.5s;
-    overflow: hidden;
-}
-
-.menu .menu-dropdown.menu-dropdown-open html {
-    overflow: hidden;
+    animation: fadeInAndDown .5s;
+    overflow: hidden
 }
 
 .overlay {
@@ -197,7 +189,7 @@ ul {
     left: 0;
     background: #000;
     display: block;
-    opacity: 0.6;
+    opacity: .6
 }
 
 .menu .menu-dropdown-item {
@@ -206,11 +198,11 @@ ul {
     color: #444;
     width: 80%;
     padding: 10px 0;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .menu .menu-dropdown a:last-child .menu-dropdown-item {
-    border-bottom: none;
+    border-bottom: none
 }
 
 .dropdown-text {
@@ -220,18 +212,17 @@ ul {
     transform: scale(1.05,1);
     color: #444;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 2px
 }
 
-
-.selected, .selected a {
-    color: #46A9DF;
-    font-weight: 600;
+.selected,.selected a {
+    color: #46a9df;
+    font-weight: 600
 }
 
 main {
     flex: 1;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 .row {
@@ -240,119 +231,114 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 .image {
     display: block;
     height: auto;
     margin: auto;
-    max-width: 100%;
+    max-width: 100%
 }
+
 .full-width {
     max-width: 100vw;
-    left: 0;
+    left: 0
 }
 
 .caption {
     font-style: italic;
     text-align: center;
-    margin: auto;
-    margin-top: 1em;
+    margin: 1em auto auto;
     color: #888;
-    width: 100%;
+    width: 100%
 }
 
-.image.inline-image {
-    margin: 3em auto;
+.image.inline-image,.row.inline-image {
+    margin: 3em auto
 }
 
 video {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 50px
 }
 
-.row.inline-image {
-    margin: 3em auto;
+div[data-page=work] a {
+    min-width: 50%
 }
 
-div[data-page="work"] a {
-    min-width: 50%;
-}
-
-h1.title {
+h1.subtitle,h1.title {
     padding: 24px 0;
     font-size: 180%;
     text-align: center;
     width: 100%;
     max-width: 600px;
-    margin: 1em auto 1em;
-    font-weight: 500;
-}
-h1.subtitle {
-    padding: 24px 0;
-    font-size: 130%;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    margin: -2em auto 1em;
-    color: #888;
-    font-weight: 400;
-}
-h1.ascii {
-    padding: 24px 0;
-    font-size: 500%;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    font-weight: 500;
-    margin: 0 auto 0;
-    color: #bbb;
+    margin: 1em auto;
+    font-weight: 500
 }
 
-div[data-page="about"] h1.title {
-    margin: 0 auto 1em;
+h1.subtitle {
+    font-size: 130%;
+    margin: -2em auto 1em;
+    color: #888;
+    font-weight: 400
+}
+
+.tab-nav ul,h1.ascii {
+    text-align: center;
+    margin: 0 auto
+}
+
+h1.ascii {
+    padding: 24px 0;
+    width: 100%;
+    max-width: 600px;
+    font-weight: 500;
+    color: #bbb;
+    font-size: 500%
+}
+
+div[data-page=about] h1.title {
+    margin: 0 auto 1em
 }
 
 .tab-nav ul {
     display: table;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1em;
+    font-size: 1em
 }
 
 .tab-nav.page-nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .tab-nav.page-nav.desktop {
-    display: none;
+    display: none
 }
 
 .nav-list {
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0
 }
 
 .nav-list li {
     float: left;
     margin-left: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0
 }
 
-.tag li {
-    border-radius: 0.2rem;
+.nav-list.social-media li,.tag li {
+    border-radius: .2rem;
     color: #999;
-    border: 1px solid rgba(0,0,0, 0.1);
-    margin: 0 0.4rem 2rem 0.4rem;
+    border: 1px solid rgba(0,0,0,.1);
+    margin: 0 .4rem 2rem;
     text-transform: capitalize;
-    padding: 0.7rem 1rem 0.5rem;
+    padding: .7rem 1rem .5rem
 }
 
 .noselect {
-    user-select: none;
+    user-select: none
 }
 
 .social-item {
@@ -361,15 +347,15 @@ div[data-page="about"] h1.title {
     background-repeat: no-repeat;
     padding: 0 12px 0 20px;
     margin-bottom: 12px;
-    font-size: 90%;
+    font-size: 90%
 }
 
-.social-media.contact  {
-    margin-top: 60px;
+.social-media.contact {
+    margin-top: 60px
 }
 
-div[data-page="about"] .about-content {
-    margin-bottom: 24px;
+div[data-page=about] .about-content {
+    margin-bottom: 24px
 }
 
 .about-desc {
@@ -377,171 +363,146 @@ div[data-page="about"] .about-content {
     line-height: 2em;
     padding-bottom: 3rem;
     font-size: 1.1em;
-    margin: auto;
+    margin: auto
 }
 
 .about-content {
     flex: 1;
     width: 80%;
     margin: auto;
-    max-width: 800px;
+    max-width: 800px
 }
 
 .about-desc li {
-    font-size: 1.1em;
+    font-size: 1.1em
 }
 
 .about-title {
     font-size: 1.2em;
     font-weight: 600;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem
 }
 
 .active {
     display: block;
-    animation: fadeIn 0.75s;
+    animation: fadeIn .75s
 }
 
 .hidden {
-    display: none;
+    display: none
 }
 
 .portrait {
-    border-radius: 2%;
+    border-radius: 2%
 }
 
 .col-md-4 {
     width: 100%;
     margin-top: 1em;
-    text-align: center;
+    text-align: center
 }
 
 .project-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .text-wrapper {
-    text-align: center;
+    text-align: center
 }
 
 .header-text {
     color: #888;
     font-size: 1.1em;
-    line-height: 1em;
-    margin: auto;
-    margin-bottom: 20px;
+    margin: auto auto 20px;
     width: 80%;
     line-height: 1.5em;
-    letter-spacing: 0.5px;
+    letter-spacing: .5px
 }
 
 .subheader-text {
     text-transform: capitalize;
     font-weight: 600;
     font-size: 1.5em;
-    line-height: 1em;
+    line-height: 1em
 }
 
 .about-content a {
     font-size: 1.1em;
     font-weight: 500;
-    color: #46A9DF;
+    color: #46a9df
 }
 
 .nav-list.social-media li {
-
-    border-radius: 0.2rem;
-    border: 1px solid rgba(0,0,0, 0.1);
-    margin: 0 0.4rem 2rem 0.4rem;
-    text-transform: capitalize;
-    padding: 0.7rem 1rem 0.5rem;
-    transition: all 0.5s;
+    transition: all .5s;
     color: #777;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .nav-list.social-media li:hover {
-    border-color: #BBB;
-    color: #444;
+    border-color: #bbb;
+    color: #444
 }
 
 .nav-list.social-media li:hover i:before {
-    color: #46A9DF;
-    transition: all 0.5s;
+    color: #46a9df;
+    transition: all .5s
 }
 
 .nav-list li i:before {
     color: #999;
     margin-right: 5px;
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 @keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
 
-    100% {
-        opacity: 1;
+    to {
+        opacity: 1
     }
 }
 
 @keyframes fadeInAndDown {
     0% {
         opacity: 0;
-        transform: translateY(-8px);
+        transform: translateY(-8px)
     }
 
-    100% {
-        opacity: 1;
+    to {
+        opacity: 1
     }
 }
 
 i.fa {
-    font: normal normal normal 14px/1;
+    font: 14px/1
 }
 
-/*.cheat-box {
-    position: fixed;
-    height: 90px;
-    width: 120%;
-    background-color: white;
-    box-shadow: 0px 0px 10px #999;
-    margin-left: -10%;
-}*/
-
-
-/*Rules for desktop specific*/
-
-@media (min-width: 640px) {
+@media (min-width:640px) {
     .menu .menu-desktop {
-        display: flex;
+        display: flex
     }
 
-    .menu .menu-mobile {
-        display: none;
+    .menu .menu-dropdown,.menu .menu-mobile {
+        display: none
     }
 
-    .menu .menu-dropdown {
-        display: none;
-    }
-
-    div[data-page="about"] .row {
+    div[data-page=about] .row {
         justify-content: flex-start;
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     .about-title {
-        text-align: left;
-        padding-top: 0;
+        padding-top: 0
     }
 
-    .about-desc {
-        text-align: left;
+    .about-desc,.about-title {
+        text-align: left
     }
 
-    div[data-page="about"] .image {
-        max-width: 253px;
+    div[data-page=about] .image {
+        max-width: 253px
     }
 
     .project-wrapper {
@@ -550,103 +511,98 @@ i.fa {
         overflow: hidden;
         height: 100%;
         margin-bottom: 4%;
-        background-color: black;
+        background-color: #000;
         width: 48%;
-        transition: opacity 0.75s;
+        transition: opacity .75s
     }
 
     .project-wrapper img {
         opacity: 1;
-        transition: opacity 0.75s;
+        transition: opacity .75s
     }
 
     .project-wrapper:hover img {
-        opacity: 0.3;
-        transition: opacity 0.75s;
+        opacity: .3;
+        transition: opacity .75s
     }
 
     .project-wrapper:first-child {
-        margin-right: 4%;
+        margin-right: 4%
     }
 
     .tab-nav.page-nav.desktop {
-        display: block;
+        display: block
     }
 
     .tab-nav.page-nav.mobile {
-        display: none;
+        display: none
     }
 
     .text-wrapper {
-        opacity: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%);
         opacity: 0;
         z-index: 99;
-        color: white;
-        transition: opacity 0.75s;
+        color: #fff;
+        transition: opacity .75s
     }
 
     .project-wrapper:hover .text-wrapper {
-        opacity: 1;
+        opacity: 1
     }
 
     .logo {
-        height: 40px;
+        height: 40px
     }
 
     .header-text {
-        color: #C8CED0;
-        text-shadow: 0px 0px 2px #000;
+        color: #c8ced0;
+        text-shadow: 0 0 2px #000;
         font-size: 1.2em;
-        margin-bottom: 0px;
         margin: auto;
         width: 80%;
-        line-height: 1.5em;
+        line-height: 1.5em
     }
 
     .subheader-text {
         text-transform: capitalize;
-        color: white;
+        color: #fff;
         font-weight: 600;
         line-height: 1.2em;
-        text-shadow: 0px 0px 2px #000;
+        text-shadow: 0 0 2px #000
     }
 
     .row {
-        justify-content: flex-start;
+        justify-content: flex-start
     }
 
     .portrait {
-        border-radius: 50%;
+        border-radius: 50%
     }
 
-    video {
-        margin-top: 0;
+    .social-media.contact,video {
+        margin-top: 0
     }
+
     video.narrow {
         width: 40%;
         margin: auto;
-        box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
-    }
-
-    .social-media.contact  {
-        margin-top: 0;
+        box-shadow: 0 3px 5px rgba(0,0,0,.1)
     }
 
     .col-md-4.text-left {
         width: 33%;
-        margin-bottom: 50px;
+        margin-bottom: 50px
     }
 
     .text-left {
-        text-align: left;
+        text-align: left
     }
 
     .cheat-box {
-        visibility: hidden;
+        visibility: hidden
     }
 }
