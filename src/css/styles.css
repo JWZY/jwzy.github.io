@@ -593,6 +593,15 @@ i.fa {
         box-shadow: 0 3px 5px rgba(0,0,0,.1)
     }
 
+    img.shadow {
+        box-shadow: 0 0 5px rgba(0,0,0,.1)
+    }
+
+    .inline-image.narrow {
+        width: 60%;
+        margin: auto;
+    }
+
     .col-md-4.text-left {
         width: 33%;
         margin-bottom: 50px
