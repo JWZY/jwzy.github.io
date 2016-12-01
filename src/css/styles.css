@@ -128,7 +128,7 @@ html,ul {
 }
 
 .menu .menu-desktop {
-    padding-top: 30px;
+    padding-top: 35px;
     display: none;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -142,6 +142,7 @@ html,ul {
     font-weight: 400;
     padding: 8px 12px;
     transform: scale(1.05,1);
+    font-size: 0.9em;
 }
 
 .menu .menu-desktop .menu-bullet {
