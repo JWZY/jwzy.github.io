@@ -56,13 +56,13 @@ html {
 }
 
 .menu-desktop a:hover {
-    color: #197fa3;
+    color: black;
     transition: all .5s
 }
 
 .top-nav {
     font-weight: 400;
-    color: #666;
+    color: #888;
     text-transform: uppercase;
     letter-spacing: 2px
 }
@@ -139,9 +139,9 @@ html,ul {
 
 .menu .menu-desktop div a {
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     padding: 8px 12px;
-    transform: scale(1.05,1)
+    transform: scale(1.05,1);
 }
 
 .menu .menu-desktop .menu-bullet {
@@ -216,7 +216,7 @@ html,ul {
 }
 
 .selected,.selected a {
-    color: #46a9df;
+    color: #444;
     font-weight: 600
 }
 
