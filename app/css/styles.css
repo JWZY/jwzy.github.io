@@ -139,9 +139,9 @@ html,ul {
 
 .menu .menu-desktop div a {
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     padding: 8px 12px;
-    transform: scale(1.05,1);
+    transform: scale(1.1,1);
     font-size: 0.9em;
 }
 
@@ -330,10 +330,10 @@ div[data-page=about] h1.title {
 }
 
 .nav-list.social-media li,.tag li {
-    border-radius: .2rem;
+    border-radius: 10rem;
     color: #999;
     border: 1px solid rgba(0,0,0,.1);
-    margin: 0 .4rem 2rem;
+    margin: 0 .7rem 2rem;
     text-transform: capitalize;
     padding: .7rem 1rem .5rem
 }
@@ -440,17 +440,18 @@ div[data-page=about] .about-content {
 }
 
 .nav-list.social-media li:hover {
-    border-color: #bbb;
-    color: #444
+    background-color: #46a9df;
+    transition: all .5s;
+    color: white
 }
 
 .nav-list.social-media li:hover i:before {
-    color: #46a9df;
+    color: rgba(255,255,255,0.7);
     transition: all .5s
 }
 
 .nav-list li i:before {
-    color: #999;
+    color: #46a9df;
     margin-right: 5px;
     margin-left: 5px
 }
