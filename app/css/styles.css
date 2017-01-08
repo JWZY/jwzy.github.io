@@ -12,9 +12,40 @@ i:before {
     font-family: FontAwesome
 }
 
-/*body,header {
-    max-width: 1100px
-}*/
+.return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(71, 185, 197, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+}
+.return-to-top i {
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+}
+i.fa.fa-chevron-up::before {
+    color: white;
+}
+.return-to-top:hover {
+    background: rgba(71, 185, 197, 1);
+
+}
+.return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
 
 header {
     position: relative;
@@ -30,8 +61,7 @@ img.shadow {
     box-shadow: 0 0 5px rgba(0,0,0,.1)
 }
 footer {
-    margin-top: 1.5em;
-    margin-bottom: 2em;
+    margin-bottom: 5em;
     text-align: center;
     font-size: 16px;
     color: #888
@@ -362,12 +392,16 @@ div[data-page=about] h1.title {
     font-size: 90%
 }
 
-.social-media.contact {
-    margin-top: 60px
-}
-
 div[data-page=about] .about-content {
     margin-bottom: 24px
+}
+
+.underline-centre {
+    border-top: 3px solid;
+    border-color:#47b9c5;
+    width: 60px;
+    margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 .about-desc {
@@ -441,7 +475,7 @@ div[data-page=about] .about-content {
 .about-content a {
     font-size: 1em;
     font-weight: 500;
-    color: #46a9df
+    color: #47b9c5
 }
 
 .nav-list.social-media li {
@@ -451,7 +485,7 @@ div[data-page=about] .about-content {
 }
 
 .nav-list.social-media li:hover {
-    background-color: #46a9df;
+    background-color: #47b9c5;
     transition: all .5s;
     color: white
 }
@@ -462,7 +496,7 @@ div[data-page=about] .about-content {
 }
 
 .nav-list li i:before {
-    color: #46a9df;
+    color: #47b9c5;
     margin-right: 5px;
     margin-left: 5px
 }
@@ -621,7 +655,7 @@ i.fa {
 
     .col-md-4.text-left {
         width: 33%;
-        margin-bottom: 50px
+        margin-bottom: 20px
     }
 
     .text-left {
