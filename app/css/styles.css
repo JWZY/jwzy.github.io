@@ -4,8 +4,6 @@
     box-sizing: border-box;
     font-family: 'Roboto','Helvetica',sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color: #444
 }
 
 i:before {
@@ -14,167 +12,107 @@ i:before {
 
 .previous {
     position: fixed;
-    left: 0px;
-    top: 80vh;
-    background: rgba(255,255,255,0.7);
-    padding: 25px 30px 25px 155px;
+    left: 0;
+    top: 65vh;
+    background: rgba(71, 185, 197, 0.3);
+    padding: 25px 20px 25px 145px;
     margin-left: -140px;
     display: block;
     text-decoration: none;
     list-style: none;
     text-align: left;
     transition: all 0.5s ease;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,0);
+    border-left: none;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.previous:hover {
-/*    border-top-width: 40px;
-    border-bottom-width: 40px;*/
-    transition: all 0.5s ease; 
-    margin-left: 0;
-}
-
- i.fa.fa-chevron-left {
+.previous i.fa.fa-chevron-left {
     transition: all 0.5s ease;
  }
 
-.previous:hover i.fa.fa-chevron-left {
-    margin-left: -140px;
-    transition: all 0.5s ease; 
-}
-
-.previous:hover i.fa.fa-chevron-left:before {
-    color: rgb(71, 185, 197);
-    transition: all 0.5s ease; 
-}
-
-.previous i.fa.fa-chevron-left:before {
-    font-size: 26px;
-    color: #999;
-    display: block;
-    transition: all 0.5s ease; 
-}
-
 .previous .nav-direction {
-    display: block;
-    margin-top: -58px;
-    margin-left: -120px;
+    display: none;
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.5s;
-    position: fixed;
-}
-
-.previous:hover .nav-direction {
-    margin-left: -100px;
-    transition: all 0.5s;
-
+    left: -20px;
 }
 
 .previous .nav-name {
-    display: block;
-    margin-top: -10px;
-    margin-left: -120px;
+    display: none;
     font-size: 1.1rem;
     transition: all 0.5s;
-    position: fixed;
+    left: -20px;
+    margin: 0;
 }
 
-.previous:hover .nav-name {
-    margin-left: -100px;
-    transition: all 0.5s;
-
+.previous i.fa.fa-chevron-left:before {
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: all 0.5s ease;
 }
 
 .next {
     position: fixed;
-    right: 0px;
-    top: 80vh;
-    background: rgba(255,255,255,0.7);
-    padding: 25px 155px 25px 30px;
+    right: 0;
+    top: 65vh;
+    background: rgba(71, 185, 197, 0.3);
+    padding: 25px 145px 25px 20px;
     margin-right: -140px;
     display: block;
     text-decoration: none;
     list-style: none;
     text-align: right;
     transition: all 0.5s ease;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0,0,0,0);
+    border-right: none;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
-.next:hover {
-/*    border-top-width: 40px;
-    border-bottom-width: 40px;*/
-    transition: all 0.5s ease; 
-    margin-right: 0;
-}
-
- i.fa.fa-chevron-right {
+.next i.fa.fa-chevron-right {
     transition: all 0.5s ease;
  }
 
-.next:hover i.fa.fa-chevron-right {
-    margin-right: -140px;
-    transition: all 0.5s ease; 
-}
-
-.next:hover i.fa.fa-chevron-right:before {
-    color: rgb(71, 185, 197);
-    transition: all 0.5s ease; 
-}
-
-.next i.fa.fa-chevron-right:before {
-    font-size: 26px;
-    color: #999;
-    display: block;
-    transition: all 0.5s ease; 
-}
-
 .next .nav-direction {
-    display: block;
-    margin-top: -58px;
-    margin-right: -120px;
+    display: none;
     font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.5s;
-    position: fixed;
-}
-
-.next:hover .nav-direction {
-    margin-right: -100px;
-    transition: all 0.5s;
-
+    right: -20px;
 }
 
 .next .nav-name {
-    display: block;
-    margin-top: -10px;
-    margin-right: -120px;
+    display: none;
     font-size: 1.1rem;
     transition: all 0.5s;
-    position: fixed;
+    right: -20px;
+    margin: 0;
 }
 
-.next:hover .nav-name {
-    margin-right: -100px;
-    transition: all 0.5s;
+.next i.fa.fa-chevron-right:before {
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: all 0.5s ease;
 }
+
 
 .return-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: rgb(0, 0, 0);
-    background: rgba(71, 185, 197, 0.7);
+    background: rgba(71, 185, 197, 0.3);
     width: 50px;
     height: 50px;
     display: block;
@@ -221,7 +159,7 @@ img.shadow {
     box-shadow: 0 0 5px rgba(0,0,0,.1)
 }
 footer {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     text-align: center;
     font-size: 16px;
     color: #888
@@ -520,7 +458,7 @@ div[data-page=about] h1.title {
     justify-content: space-between
 }
 
-.tab-nav.page-nav.desktop {
+.tab-nav.desktop {
     display: none
 }
 
@@ -729,11 +667,11 @@ i.fa {
         margin-right: 4%
     }
 
-    .tab-nav.page-nav.desktop {
+    .tab-nav.desktop {
         display: block
     }
 
-    .tab-nav.page-nav.mobile {
+    .tab-nav.mobile {
         display: none
     }
 
@@ -795,25 +733,103 @@ i.fa {
         margin: auto;
         box-shadow: 0 3px 5px rgba(0,0,0,.1)
     }
+
     .previous {
         top: 50vh;
         background: rgba(255,255,255,0.7);
-        padding: 35px 30px 35px 155px;
-        margin-left: -140px;
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 25px 80px 25px 25px;
     }
     .previous .nav-direction {
-        margin-top: -42px;
+        display: block;
+        margin: 0;
+    }
+    .previous .nav-name {
+        display: block;
+    }
+    .previous:hover {
+        transition: all 0.5s ease;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .previous:hover i.fa.fa-chevron-left {
+        transition: all 0.5s ease;
+        margin: 0;
+    }
+
+    .previous:hover i.fa.fa-chevron-left:before {
+        color: rgb(71, 185, 197);
+        transition: all 0.5s ease;
+    }
+    .previous:hover .nav-direction {
+        transition: all 0.5s;
+        left: 10px;
+
+    }
+    .previous:hover .nav-name {
+        transition: all 0.5s;
+        left: 51px;
+    }
+    .previous i.fa.fa-chevron-left {
+        transition: all 0.5s ease;
+        position: fixed;
+        right: 25px;
+        top: 36px;
     }
 
     .next {
         top: 50vh;
         background: rgba(255,255,255,0.7);
-        padding: 35px 155px 35px 30px;
-        margin-right: -140px;
+        border: 1px solid rgba(0,0,0,0.1);
+        padding: 25px 25px 25px 80px;
     }
     .next .nav-direction {
-        margin-top: -42px;
+        display: block;
+        margin: 0;
     }
+    .next .nav-name {
+        display: block;
+    }
+    .next:hover {
+        transition: all 0.5s ease;
+        margin-right: 0;
+        right: 0;
+    }
+
+    .next:hover i.fa.fa-chevron-right {
+        transition: all 0.5s ease;
+        margin: 0;
+    }
+
+    .next:hover i.fa.fa-chevron-right:before {
+        color: rgb(71, 185, 197);
+        transition: all 0.5s ease;
+    }
+    .next:hover .nav-direction {
+        transition: all 0.5s;
+        right: 10px;
+
+    }
+    .next:hover .nav-name {
+        transition: all 0.5s;
+        right: 51px;
+    }
+    .next i.fa.fa-chevron-right {
+        transition: all 0.5s ease;
+        position: fixed;
+        left: 25px;
+        top: 36px;
+    }
+
+    .previous i.fa.fa-chevron-left:before {
+        color: #999;
+    }
+
+    .next i.fa.fa-chevron-right:before {
+        color: #999;
+    }
+
     img.zoom-in:hover {
         cursor: zoom-in;
     }
