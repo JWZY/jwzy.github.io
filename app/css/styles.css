@@ -734,6 +734,50 @@ i.fa {
         box-shadow: 0 3px 5px rgba(0,0,0,.1)
     }
 
+    /*Hacky stuff to be fixed*/
+    .previous.noom-nav {
+        margin-left: -132.75px;
+    }
+    .next.noom-nav {
+        margin-right: -132.75px;
+    }
+
+    .previous.rm-nav {
+        margin-left: -136.14px;
+    }
+    .next.rm-nav {
+        margin-right: -136.14px;
+    }
+
+    .previous.uken-nav {
+        margin-left: -151px;
+    }
+    .next.uken-nav {
+        margin-right: -151px;
+    }
+
+    .previous.vector-nav {
+        margin-left: -140px;
+    }
+    .next.vector-nav {
+        margin-right: -140px;
+    }
+
+    .previous.leggo-nav {
+        margin-left: -157px;
+    }
+    .next.leggo-nav {
+        margin-right: -157px;
+    }
+
+    .previous.uweng-nav {
+        margin-left: -175.42px;
+    }
+    .next.uweng-nav {
+        margin-right: -175.42px;
+    }
+    /* hacky stuff end*/
+
     .previous {
         top: 50vh;
         background: rgba(255,255,255,0.7);
@@ -830,48 +874,7 @@ i.fa {
         color: #999;
     }
 
-    /*Hacky stuff to be fixed*/
-    .previous.noom-nav {
-        margin-left: -132.75px;
-    }
-    .next.noom-nav {
-        margin-right: -132.75px;
-    }
 
-    .previous.rm-nav {
-        margin-left: -136.14px;
-    }
-    .next.rm-nav {
-        margin-right: -136.14px;
-    }
-
-    .previous.uken-nav {
-        margin-left: -151px;
-    }
-    .next.uken-nav {
-        margin-right: -151px;
-    }
-
-    .previous.vector-nav {
-        margin-left: -140px;
-    }
-    .next.vector-nav {
-        margin-right: -140px;
-    }
-
-    .previous.leggo-nav {
-        margin-left: -157px;
-    }
-    .next.leggo-nav {
-        margin-right: -157px;
-    }
-
-    .previous.uweng-nav {
-        margin-left: -175.42px;
-    }
-    .next.uweng-nav {
-        margin-right: -175.42px;
-    }
 
 
     img.zoom-in:hover {
