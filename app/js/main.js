@@ -1,3 +1,5 @@
+$(document).ready(function(){$("body").hide().fadeIn(600);});
+
 document.addEventListener("DOMContentLoaded", main, false);
 
 // matches polyfill
