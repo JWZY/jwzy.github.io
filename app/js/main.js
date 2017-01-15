@@ -1,4 +1,4 @@
-$(document).ready(function(){$("body").hide().fadeIn(600);});
+$(document).ready(function(){$("body").hide().fadeIn(1000);});
 
 document.addEventListener("DOMContentLoaded", main, false);
 
