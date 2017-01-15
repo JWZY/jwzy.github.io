@@ -190,7 +190,7 @@ html {
 }
 
 .menu-desktop a:hover {
-    color: black;
+    color: #47b9c5;
     transition: all .5s
 }
 
@@ -362,7 +362,7 @@ html,ul {
 }
 
 .selected,.selected a {
-    color: #444;
+    color: #47b9c5;
     font-weight: 600
 }
 
@@ -478,7 +478,7 @@ div[data-page=about] h1.title {
     border-radius: 10rem;
     color: #999;
     border: 1px solid rgba(0,0,0,.1);
-    margin: 0 .7rem 2rem;
+    margin: 0 .5rem 2rem;
     text-transform: capitalize;
     padding: .7rem 1rem .5rem
 }
