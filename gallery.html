@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Home | Khrysmar School of Music</title>
+		<title>Gallery | Khrysmar School of Music</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,13 +25,12 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
+	<body class="subpage">
+
 		<!-- Header -->
 			<header id="header">
 <div class="inner">
-	<a href="index.html" class="logo">
-		<!-- <img class="image logomark" src="favicon/favicon.png"/> -->
-		<strong>KHRYSMAR</strong> SCHOOL OF MUSIC</a>
+	<a href="index.html" class="logo"><strong>KHRYSMAR</strong> SCHOOL OF MUSIC</a>
 	<nav id="nav">
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
@@ -45,71 +44,24 @@
 			</header>
 
 		<!-- Banner -->
-			<section id="banner">
+			<section class="style3" id="lessons">
 				<div class="inner">
 					<header>
-						<h3>Welcome to</h2>
-						<h1 class="main-heading">Khrysmar</h1>
-						<h1 class="subheading">School Of Music</h1>
-						<div class="divider"></div>
-						<h3>Give your loved ones the gift of music.</h3>
-						<!-- <p style="margin-bottom: 50px">Give your loved ones the gift of music.</p> -->
+						<h2>Gallery</h2>
+						<h3>Students and family concerts</h3>
 					</header>
-
-					<footer>
-						<a href="#footer" class="button">Book a Lesson Today</a>
-					</footer>
 				</div>
 			</section>
 
-
 		<!-- Three -->
-			<section id="three" class="wrapper align-center">
+			<section id="three" class="wrapper">
 				<div class="inner">
-					<h2>Lessons at Khrysmar Music</h2>
-					<div class="divider"></div>
-					<div class="flex flex-2">
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_960_720.jpg" alt="Pic 01" />
-							</div>
-
-							<header>
-								<h4>RCM Exam Prep</h4>
-							</header>
-							<p>Individual lessons are offered for both <br />RCM theory and practical exams.<br /></p>
-						</article>
-
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://oryshihor.com/wp-content/uploads/2016/03/Blog-Images-Repertoire-Audition-Worthy.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Auditions</h4>
-							</header>
-							<p>Expand your repetoir for upcoming auditions, <br /> whether it's for professional or school concerts.</p>
-						</article>
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="http://aanbieding.marktplaats.com/wp-content/uploads/2011/12/Online-Pianoles.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Competitions</h4>
-							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-						</article>
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://c1.staticflickr.com/1/473/31651550510_de537fa3c0_b.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Recitals</h4>
-							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-						</article>
-						<footer>
-							<a href="lessons.html" class="button">Learn More</a>
-						</footer>
+					<div class="row 50% uniform">
+						<div class="12u"><span class="image fit"><img src="https://i.imgur.com/4D2VLb8.jpg" alt=""/></span></div>
+						<div class="3u 6u(medium) 12u$(small)"><span class="image fit"><img src="https://i.imgur.com/WynB6uS.jpg" alt=""/></span></div>
+						<div class="3u 6u$(medium) 12u$(small)"><span class="image fit"><img src="https://i.imgur.com/ltUk1aV.jpg" alt=""/></span></div>
+						<div class="3u 6u(medium) 12u$(small)"><span class="image fit"><img src="https://i.imgur.com/klOdPMD.jpg" alt=""/></span></div>
+						<div class="3u$ 6u$(medium) 12u$(small)"><span class="image fit"><img src="https://i.imgur.com/ufkEKnS.jpg" alt=""/></span></div>
 					</div>
 				</div>
 			</section>
@@ -133,7 +85,7 @@
 
 			function setNavigation() {
 				var path = window.location.pathname;
-				path = path.replace("\/staging\/", "");
+				path = path.replace("/staging/", "");
 				path = decodeURIComponent(path);
 				console.log(path);
 

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Home | Khrysmar School of Music</title>
+		<title>Lessons | Khrysmar School of Music</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,13 +25,12 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
+	<body class="subpage">
+
 		<!-- Header -->
 			<header id="header">
 <div class="inner">
-	<a href="index.html" class="logo">
-		<!-- <img class="image logomark" src="favicon/favicon.png"/> -->
-		<strong>KHRYSMAR</strong> SCHOOL OF MUSIC</a>
+	<a href="index.html" class="logo"><strong>KHRYSMAR</strong> SCHOOL OF MUSIC</a>
 	<nav id="nav">
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
@@ -45,73 +44,28 @@
 			</header>
 
 		<!-- Banner -->
-			<section id="banner">
+			<section class="style3" id="lessons">
 				<div class="inner">
 					<header>
-						<h3>Welcome to</h2>
-						<h1 class="main-heading">Khrysmar</h1>
-						<h1 class="subheading">School Of Music</h1>
-						<div class="divider"></div>
-						<h3>Give your loved ones the gift of music.</h3>
-						<!-- <p style="margin-bottom: 50px">Give your loved ones the gift of music.</p> -->
+						<h2>Lessons at Khrysmar</h2>
+						<h3>For students of all levels and needs</h3>
 					</header>
-
-					<footer>
-						<a href="#footer" class="button">Book a Lesson Today</a>
-					</footer>
 				</div>
 			</section>
 
-
 		<!-- Three -->
-			<section id="three" class="wrapper align-center">
+			<section id="three" class="wrapper">
 				<div class="inner">
-					<h2>Lessons at Khrysmar Music</h2>
-					<div class="divider"></div>
-					<div class="flex flex-2">
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://cdn.pixabay.com/photo/2016/09/08/21/09/piano-1655558_960_720.jpg" alt="Pic 01" />
-							</div>
-
-							<header>
-								<h4>RCM Exam Prep</h4>
-							</header>
-							<p>Individual lessons are offered for both <br />RCM theory and practical exams.<br /></p>
-						</article>
-
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://oryshihor.com/wp-content/uploads/2016/03/Blog-Images-Repertoire-Audition-Worthy.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Auditions</h4>
-							</header>
-							<p>Expand your repetoir for upcoming auditions, <br /> whether it's for professional or school concerts.</p>
-						</article>
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="http://aanbieding.marktplaats.com/wp-content/uploads/2011/12/Online-Pianoles.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Competitions</h4>
-							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-						</article>
-						<article>
-							<div class="image round image-cropper">
-								<img class="circular" src="https://c1.staticflickr.com/1/473/31651550510_de537fa3c0_b.jpg" alt="Pic 02" />
-							</div>
-							<header>
-								<h4>Recitals</h4>
-							</header>
-							<p>Pellentesque fermentum dolor. Aliquam quam lectus<br />facilisis auctor, ultrices ut, elementum vulputate, nunc<br /> blandit ellenste egestagus commodo.</p>
-						</article>
-						<footer>
-							<a href="lessons.html" class="button">Learn More</a>
-						</footer>
-					</div>
+					<p><span class="image left"><img src="https://www.alairhomes.ca/south-etobicoke/wp-content/uploads/sites/41/2015/11/south-etobicoke.jpg" alt="" /></span>We're located in South Etobicoke, and teach all over the Greater Toronto Area. </p>
+					<p>Enjoy piano lessons in your home or in ours! Our lessons will prepare you for <strong>RCM exams, recitals, auditions, competitions</strong>, and will help you reach your musical goals.</p>
+					<p>Play for yourself, play for others, and discover the joy of music in highly personalized private lessons.  We offer <strong>30 minute, 45 minute, and 60 minute</strong> lessons depending on your ability and preference. For more details including a quote for your lesson you could reach us at <strong>khrysmar777@gmail.com</strong> or call <strong>(416)-877-2902.</strong></p>
+					<p><span class="image right"><img src="https://images.unsplash.com/photo-1485561222814-e6c50477491b?auto=format&fit=crop&w=1950&q=80" alt="" /></span>To showcase their progress, students will have the opportunity to perform in front of an audience at our annual recital in June. Every year, students of all ages are invited to perform for their parents, friends, and peers, and will be able to pre-order a DVD of the performances to watch later! Join us afterward for coffee, tea, and light snacks.</p> 
+					<p>Check out the performances from past concerts and recitals under <strong>Concerts</strong>!</p>
+					<footer>
+						<a href="concerts.html" class="button">See Past Performances</a>
+					</footer>
 				</div>
+
 			</section>
 
 		<!-- Footer -->
@@ -133,7 +87,7 @@
 
 			function setNavigation() {
 				var path = window.location.pathname;
-				path = path.replace("\/staging\/", "");
+				path = path.replace("/staging/", "");
 				path = decodeURIComponent(path);
 				console.log(path);
 
