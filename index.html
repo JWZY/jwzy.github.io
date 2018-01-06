@@ -143,7 +143,7 @@
 						</div>
 
 							<div class="row">
-								<img class="image" src="app/img/uken.jpg" >
+								<img class="image" data-action="zoom" src="app/img/uken.jpg" >
 								<p class="caption">A typical Friday at Uken.</p>
 							</div><br><br>
 
@@ -187,25 +187,25 @@
 							<b>Step 1.</b> Working with game design to establish a logical flow for the different game components. 
 
 							<div class="row inline-image">
-								<img class="image zoom-in shadow" src="app/img/cb-pve-flowchart.png" tabindex="0">
+								<img class="image shadow" data-action="zoom" src="app/img/cb-pve-flowchart.png" tabindex="0">
 								<p class="caption">The enormous documented PvE ecosystem.</p>
 							</div>
 
 							<b>Step 2.</b> Establish the flow, and then have lots and lots of brainstorm sessions.
 							<div class="row inline-image">
-								<img class="image zoom-in" src="app/img/cb-brainstorm2.jpg" tabindex="0">
+								<img class="image" data-action="zoom" src="app/img/cb-brainstorm2.jpg" tabindex="0">
 								<p class="caption">Countless ideas were born in this room...but not all of which survive.</p>
 							</div>
 
 							<b>Step 3.</b> Explore and eliminate ideas through the creation of low to mid fidelity mocks.
 							<div class="row inline-image">
-								<img class="image zoom-in" src="app/img/cb-low-fidelity.png" tabindex="0">
+								<img class="image" data-action="zoom" src="app/img/cb-low-fidelity.png" tabindex="0">
 								<p class="caption">From sketches on paper to sketches on Sketch 3™.</p>
 							</div>
 
 							<b>Step 4.</b> Select the "best" solution candidate from the pool of low fidelity mocks, produce the high fidelity mock. Provide sound reasons to defend the design when challenged.
 							<div class="row inline-image">
-								<img class="image zoom-in" src="app/img/cb-high-fidelity.png" tabindex="0">
+								<img class="image" data-action="zoom" src="app/img/cb-high-fidelity.png" tabindex="0">
 								<p class="caption">TL: Overworld Nameplate. TR: Dossier Overview Interface. BL: Player Profile Arena Information. BR: Crafting Interface. </p> <br><br><br>
 
 								<video width="950" autoplay loop controls>
@@ -253,7 +253,7 @@
 							I was also granted the opportunity to speak in person with some of our users. What was especially valuable for me in this experience was being able to digest and dissect their comments from both a logical and emotional standpoint.
 
 							<div class="row inline-image">
-								<img class="image zoom-in" src="app/img/user-research.jpg" tabindex="0">
+								<img class="image" data-action="zoom" src="app/img/user-research.jpg" tabindex="0">
 								<p class="caption">We broke down the data so we could correlate commonalities between the participants before presenting the findings to the entire team.</p>
 							</div>
 
@@ -475,7 +475,7 @@
 							After studying the responses of over 40 students from a user survey, I was able to create three major personas. These students are those who are frustrated with finding and organizing campus/extracurricular events.
 
 							<div class="row inline-image">
-								<img class="image zoom-in" src="app/img/personas.png" tabindex="0">
+								<img class="image" data-action="zoom" src="app/img/personas.png" tabindex="0">
 								<p class="caption">The user personas of LEGGO.</p>
 							</div>
 						</div> 
@@ -495,13 +495,13 @@
 						<div class="about-desc">
 							The core design principle I had in mind while designing for LEGGO was to keep things clean and user friendly from a UI standpoint, and at the same time promoting social interaction between the users.<br><br>
 							<div class="row inline-image">
-								<img class="image shadow zoom-in" width="300" src="app/img/leggo-profile.png" tabindex="0">
-								<img class="image shadow zoom-in" width="300" src="app/img/leggo-notif.png" tabindex="0">
+								<img class="image shadow" data-action="zoom" width="300" src="app/img/leggo-profile.png" tabindex="0">
+								<img class="image shadow" data-action="zoom" width="300" src="app/img/leggo-notif.png" tabindex="0">
 							</div>
 							<br>The core functionality for LEGGO is for users to bookmark, archive, and browse for events. In order to make it easy for users to search and find relevant events, a deliberate product decision was made to categorize events based on when they are happening - today, tomorrow, or in the future.<br>
 							<div class="row inline-image">
-								<img class="image shadow zoom-in" width="300" src="app/img/leggo-detail.png" tabindex="0">
-								<img class="image shadow zoom-in" width="300" src="app/img/leggo-listing.png" tabindex="0">
+								<img class="image shadow" data-action="zoom" width="300" src="app/img/leggo-detail.png" tabindex="0">
+								<img class="image shadow" data-action="zoom" width="300" src="app/img/leggo-listing.png" tabindex="0">
 							</div>
 						</div> 
 
@@ -604,7 +604,7 @@
 	 					</div>
 
 	 					<div class="row inline-image">
-							<img class="image shadow zoom-in" src="app/img/style-guide-full.png" tabindex="0">
+							<img class="image shadow" data-action="zoom" src="app/img/style-guide-full.png" tabindex="0">
 							<p class="caption">A huge ecosystem of all the different UI components</p>
 						</div><br>
 
@@ -620,7 +620,7 @@
 						</div>
 
 	 					<div class="row inline-image">
-							<img class="image shadow zoom-in" src="app/img/permissions-chart.png" tabindex="0">
+							<img class="image shadow" data-action="zoom" src="app/img/permissions-chart.png" tabindex="0">
 							<p class="caption">Chart showing when permissions should be requested from the design's POV.</p>
 						</div><br> -->
 
@@ -768,6 +768,10 @@
 	<script type="text/javascript" src="app/js/fastclick.min.js" inline></script>
 	<script type="text/javascript" src="app/js/main.js" inline></script>
 	<script src="https://use.fontawesome.com/a830cd4bf0.js"></script>
+	<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+	<script>
+		mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
+	</script>
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
