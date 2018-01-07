@@ -221,7 +221,7 @@ b,h3 {
 }
 
 b {
-    font-size: 1.1em
+    font-size: 1em
 }
 
 h3 {
@@ -478,7 +478,7 @@ div[data-page=about] h1.title {
     border-radius: 10rem;
     color: #999;
     border: 1px solid rgba(0,0,0,.1);
-    margin: 0 .5rem 2rem;
+    margin: 0 .5rem 1rem;
     text-transform: capitalize;
     padding: .7rem 1rem .5rem
 }
@@ -504,7 +504,7 @@ div[data-page=about] .about-content {
     text-align: left;
     line-height: 2em;
     padding-bottom: 3rem;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: auto
 }
 
@@ -516,7 +516,7 @@ div[data-page=about] .about-content {
 }
 
 .about-desc li {
-    font-size: 1.1em
+    font-size: 1em
 }
 
 .about-title {
@@ -638,6 +638,16 @@ i.fa {
         text-align: left
     }
 
+    .about-desc {
+        font-size: 1.1em;
+    }
+
+    .about-desc li {
+        font-size: 1.1em;
+    }
+    b {
+        font-size: 1.1em
+    }
     div[data-page=about] .image {
         max-width: 253px
     }

@@ -132,20 +132,6 @@
 
 				<div class="row">
 					<div class="about-content">
-						<h2>Core objectives</h2>
-						<div class="about-desc">
-							<ul>
-								<li>Creating a product that provides the player with a pleasant and intuitive experience.</li>
-								<li>Designing with accordance to budget and timeline constraints.</li>
-								<li>Designing systems that are compatible with past builds and in accordance with game design specifications, while keeping scalability in mind.</li>
-								<li>Designing the product with the end user’s satisfaction and needs as the primary motivation.</li>
-							</ul>
-						</div>
-
-							<div class="row">
-								<img class="image" data-action="zoom" src="app/img/uken.jpg" >
-								<p class="caption">A typical Friday at Uken.</p>
-							</div><br><br>
 
 						<h2>The story</h2>
 						<div class="about-desc">
@@ -156,17 +142,32 @@
 							Working at the studio requires you to quickly and elegantly deliver animated and static mocks which illustrate player behavior and interactions with the game. My mentor was instrumental in ensuring that I was exposed to different opportunities and design challenges.
 						</div>
 
-						<h2>Finding the solution</h2>
+						<div class="row">
+							<img class="image" data-action="zoom" src="app/img/uken.jpg" >
+							<p class="caption">A typical Friday at Uken.</p>
+						</div><br><br>
+
+						<h2>Design objectives</h2>
+						<div class="about-desc">
+							<ul>
+								<li>Creating a product that provides the player with a pleasant and intuitive experience.</li>
+								<li>Designing with accordance to budget and timeline constraints.</li>
+								<li>Designing systems that are compatible with past builds and in accordance with game design specifications, while keeping scalability in mind.</li>
+								<li>Designing the product with the end user’s satisfaction and needs as the primary motivation.</li>
+							</ul>
+						</div>
+
+						<h2>The process</h2>
 						<div class="about-desc">
 							Over the span of my 4 month work term on CloudBreakers, I took ownership of and completed over 40 tasks large and small. This consisted of major overhauls or brand new designs of 6 major in-game systems (Garage/Crafting, Dossier, Chat, Settings, Profile/Friends, and Mission Briefing), and 12 animated prototypes. <br><br>
 
-							The overhauls and designs usually involved a series of steps:<br><br>
+							The overhauls and designs usually involved the following steps:<br><br>
 
 							<ul>
 								<li><b>Identifying the problem:</b> What exactly are we trying to solve?</li>
-								<li><b>Researching existing solutions:</b> How did other studios/design teams solve similar problems before?</li>
+								<li><b>Researching existing solutions:</b> How did other designers solve similar problems?</li>
 								<li><b>Identifying constraints:</b> Will the existing resources allow for the overhauled specs?</li>
-								<li><b>Prototyping:</b> Let's build it out and get more hands-on with the design!</li>
+								<li><b>Prototype & usability testing:</b> Let's build it out and get more hands-on with the design!</li>
 								<li><b>Iterating the solution:</b> What is not working, and how do we go about fixing it?</li>
 							</ul><br>
 
@@ -175,68 +176,40 @@
 
 							A large part of the streamlining involved laying groundworks such as establishing style guides and an UI library in both Adobe CC and Sketch.<br><br>
 
+							In this case study I will showcase and explain the steps behind the implementation of the Dossier system.
+						</div>
+						
+						<h2>Options explored</h2>
+						<div class="about-desc">
+							Before I jumped into putting ideas and images onto Sketch, a brainstorming session was held with my mentor as well as the game designer to set expectations for what the system would entail, as well as defining the requirements of the design. In this specific case, the Dossier is used to showcase player progression by tracking their achievements and unlockables in the game.
+							<div class="row inline-image">
+								<img class="image" data-action="zoom" src="app/img/cb-brainstorm2.jpg" tabindex="0">
+							</div>
+
+							After decision on a general direction and understanding what the player expectations are, explorations on the different ways of executing on the requirements took place using low to mid fidelity mocks. These mocks are drafted up quickly using placeholder images and grayscale colours to prioritize speed over form.
+							<div class="row inline-image">
+								<img class="image" data-action="zoom" src="app/img/cb-low-fidelity.png" tabindex="0">
+								<p class="caption">From pen and paper to Sketch.</p>
+							</div>
+
+							Ultimately a decision was made to eliminate all but one of the candidates from the low fidelity mocks. The column based representation of the achievements proved to satisfy our design needs the best. The rationale for this is because it is unlikely that there would be more than 5 achievement categories for the players to track. By displaying all of the achievement progresses in a horizontal fashion, the player is presented with all of the key information they need. It was deemed unnecessary to have an "detailed view" for each achievement category since the information presented in the details panel is repetitive.
+						</div>
+
+							<div class="row">
+								<img class="image" data-action="zoom" src="app/img/cb-high-fidelity.png" tabindex="0">
+								<p class="caption">TL: Overworld Nameplate. TR: Dossier Overview Interface. BL: Player Profile Arena Information. BR: Crafting Interface. </p>
+							</div>
+
+						<h2>User testing</h2>
+						<div class="about-desc">
+							Luckily my work term coincided with the Alpha playtest of CloudBreakers. The UX team had concerns in some of the general game design and gameplay directions. But in order to make our arguments more concrete we required validation in the form of external user feedback. <br><br>
+
 							Flinto and Zeplin were used to do the heavy lifting, these tools vastly improve the speed at which the team was able to complete and collaborate on tasks. Flinto allowed us to quickly build out interactive (90% functional) prototypes extremely quickly, with full featured workflows and animations. Zeplin streamlined the transition from design to engineering by turning mockups into interactive design specs, enabling developers to generate assets and style code directly. <br><br>
 
 							<div class="row inline-image">
 								<img class="image" src="app/img/zeplin-example.gif">
 								<p class="caption">In this case Zeplin helps bridge the gap between developers and designers. Fully automating the hand-off process.</p>
 							</div>
-
-							Here's a couple of animations and mocks that I worked on in the past four month, with images illustrating the process. <br><br>
-
-							<b>Step 1.</b> Working with game design to establish a logical flow for the different game components. 
-
-							<div class="row inline-image">
-								<img class="image shadow" data-action="zoom" src="app/img/cb-pve-flowchart.png" tabindex="0">
-								<p class="caption">The enormous documented PvE ecosystem.</p>
-							</div>
-
-							<b>Step 2.</b> Establish the flow, and then have lots and lots of brainstorm sessions.
-							<div class="row inline-image">
-								<img class="image" data-action="zoom" src="app/img/cb-brainstorm2.jpg" tabindex="0">
-								<p class="caption">Countless ideas were born in this room...but not all of which survive.</p>
-							</div>
-
-							<b>Step 3.</b> Explore and eliminate ideas through the creation of low to mid fidelity mocks.
-							<div class="row inline-image">
-								<img class="image" data-action="zoom" src="app/img/cb-low-fidelity.png" tabindex="0">
-								<p class="caption">From sketches on paper to sketches on Sketch 3™.</p>
-							</div>
-
-							<b>Step 4.</b> Select the "best" solution candidate from the pool of low fidelity mocks, produce the high fidelity mock. Provide sound reasons to defend the design when challenged.
-							<div class="row inline-image">
-								<img class="image" data-action="zoom" src="app/img/cb-high-fidelity.png" tabindex="0">
-								<p class="caption">TL: Overworld Nameplate. TR: Dossier Overview Interface. BL: Player Profile Arena Information. BR: Crafting Interface. </p> <br><br><br>
-
-								<video width="950" autoplay loop controls>
-									<source src="app/img/cb-evo.mp4" type="video/mp4">
-									<source src="app/img/cb-evo.webm" type="video/webm">
-								</video>
-
-							<p class="caption">Sample animation proof of concept for the evolution cinematics.</p>
-							</div>
-
-							<b>Step 5.</b> User test the final products, and iterate! Rinse and repeat.
-						</div>
-
-						<h2>Design challenges</h2>
-						<div class="about-desc">
-							One of the core concepts of UX design requires the system designed to be as intuitive as possible, with minimal thinking required on the user’s part when navigating through the interface and interactions. <br><br>
-
-							Keeping these core ideas in mind, the designs needed to be simple to use, simple in implementation, potentially scalable and also delivered in a timely fashion due to the pressing budget and timeline.<br><br>
-
-							On a few occasions, the game design and UX design team would come into disagreement with the direction or the implementation of certain features. <br><br>
-
-							Under these circumstances what usually ended up happening were collaborative brainstorm sessions. The teams would dissect the problem at its roots, and the points of discussion usually revolved around why a specification or implementation is necessary and whether it will bring value to the end users. <br><br>
-
-							In some ways UX and game designers are almost like fire and ice — game design usually wants complex game mechanics that increases the amount of meaningful decisions the players are able to make (the more stats the better, the more options the better); whereas UX designers work with the fundamental principle of reducing cognitive load by simplifying game experiences. <br><br>
-
-							One major issue that I often ran into was the consideration for the scope of designs. Often times the designed systems are rendered obsolete by existing specs, and major audits are needed. The challenge in these situations would be to always consider the timeline, and finding a solution that is optimized for UX, game design, and development resources. Sometimes this would mean settling for a "budgeted" design, but that's okay. Because sometimes the "best" UX solution is too expensive to implement. Finding the sweet spot in what works for all disciplines involved requires a delicate balance. 
-						</div>
-
-						<h2>User testing</h2>
-						<div class="about-desc">
-							Luckily my work term coincided with the Alpha playtest of CloudBreakers. The UX team had concerns in some of the general game design and gameplay directions. But in order to make our arguments more concrete we required validation in the form of external user feedback. <br><br>
 
 							The game had previously had a number of internal playtests, but the feedback received usually tends to be biased in a neutrally positive light (asking your friends and coworkers to critically and harshly evaluate your designs won't always prove to be the most productive, due to politics).<br><br>
 
@@ -260,6 +233,29 @@
 							I won’t go into too much details into the results of the playtest, but I could say that it was immensely helpful in helping us consolidating the game and identifying what works and what needs adjustments.  <br><br>
 
 							One major takeaway I learned from this exercise is the practice of empathy - putting myself in the user’s mindset and REALLY, I mean REALLY, understanding the user’s frustrations first-hand. A significant challenge I encountered during this exercise was to remove personal bias when reading into an user’s responses and behaviour. Stopping oneself from injecting their own narrative when analyzing the user feedback is especially important.
+						</div>
+
+						<div class="row inline-image">
+							<video width="950" autoplay loop controls>
+								<source src="app/img/cb-evo.mp4" type="video/mp4">
+								<source src="app/img/cb-evo.webm" type="video/webm">
+							</video>
+							<p class="caption">Sample animation proof of concept for the evolution cinematics.</p>
+						</div>
+
+						<h2>Design challenges</h2>
+						<div class="about-desc">
+							One of the core concepts of UX design requires the system designed to be as intuitive as possible, with minimal thinking required on the user’s part when navigating through the interface and interactions. <br><br>
+
+							Keeping these core ideas in mind, the designs needed to be simple to use, simple in implementation, potentially scalable and also delivered in a timely fashion due to the pressing budget and timeline.<br><br>
+
+							On a few occasions, the game design and UX design team would come into disagreement with the direction or the implementation of certain features. <br><br>
+
+							Under these circumstances what usually ended up happening were collaborative brainstorm sessions. The teams would dissect the problem at its roots, and the points of discussion usually revolved around why a specification or implementation is necessary and whether it will bring value to the end users. <br><br>
+
+							In some ways UX and game designers are almost like fire and ice — game design usually wants complex game mechanics that increases the amount of meaningful decisions the players are able to make (the more stats the better, the more options the better); whereas UX designers work with the fundamental principle of reducing cognitive load by simplifying game experiences. <br><br>
+
+							One major issue that I often ran into was the consideration for the scope of designs. Often times the designed systems are rendered obsolete by existing specs, and major audits are needed. The challenge in these situations would be to always consider the timeline, and finding a solution that is optimized for UX, game design, and development resources. Sometimes this would mean settling for a "budgeted" design, but that's okay. Because sometimes the "best" UX solution is too expensive to implement. Finding the sweet spot in what works for all disciplines involved requires a delicate balance. 
 						</div>
 
 						<h2>The takeaway</h2>
