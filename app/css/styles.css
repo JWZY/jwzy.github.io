@@ -544,6 +544,12 @@ div[data-page=about] .about-content {
     text-align: center
 }
 
+.col-md-6 {
+    width: 100%;
+    margin-top: 1em;
+    text-align: center
+}
+
 .project-wrapper {
     margin-bottom: 30px
 }
@@ -902,6 +908,11 @@ i.fa {
 
     .col-md-4.text-left {
         width: 33%;
+        margin-bottom: 20px
+    }
+
+    .col-md-6.text-left {
+        width: 50%;
         margin-bottom: 20px
     }
 
