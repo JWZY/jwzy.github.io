@@ -293,12 +293,14 @@ a {
 
 a.underline {
     font-size: 1em;
-    border-bottom: 2px dotted #999999;
+    font-weight: 700;
+    color: black;
+    border-bottom: 2px solid #47b9c5;
+    padding-bottom: 2px;
 }
 a.underline:hover {
     font-size: 1em;
     color: #47b9c5;
-    border-bottom: 2px dotted #47b9c5;
 }
 
 b {
@@ -759,7 +761,7 @@ i.fa {
         position: relative;
         overflow: hidden;
         height: 100%;
-        margin-bottom: 4%;
+        margin-bottom: 10%;
         /*background-color: #000;*/
         width: 48%;
         transition: opacity .75s
@@ -767,24 +769,25 @@ i.fa {
 
     .project-wrapper video {
         opacity: 1;
-        transition: opacity .75s;
+        transition: all .25s;
         cursor: pointer;
     }
 
     .project-wrapper:hover video {
-        opacity: .5;
-        transition: opacity .25s
+        /*opacity: .5;*/
+        transition: all .25s;
+        transform: scale(0.98);
     }
 
     .project-wrapper img {
         opacity: 1;
-        transition: opacity .75s;
+        transition: all .25s;
         cursor: pointer;
     }
 
     .project-wrapper:hover img {
-        opacity: .5;
-        transition: opacity .25s
+        transition: all .25s;
+        transform: scale(0.98);
     }
 
 /*    .project-wrapper:first-child {
@@ -887,11 +890,11 @@ i.fa {
         margin-right: -132.75px;
     }
 
-    .previous.rm-nav {
-        margin-left: -136.14px;
+    .previous.chiron-nav {
+        margin-left: -86.14px;
     }
-    .next.rm-nav {
-        margin-right: -136.14px;
+    .next.chiron-nav {
+        margin-right: -86.14px;
     }
 
     .previous.uken-nav {
@@ -1020,7 +1023,7 @@ i.fa {
     }
 
     .website-header {
-        height: 40vh;
+        height: 70vh;
         width: 100vw;
     }
 
@@ -1051,7 +1054,13 @@ i.fa {
 
     .col-md-4.text-left {
         width: 33%;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+
+    }
+
+    div[data-page=work] .col-md-4.text-left {
+        display: flex;
+        align-items: center;
     }
 
     .col-md-6.text-left {
