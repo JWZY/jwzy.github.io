@@ -247,7 +247,8 @@ i.fa-bars:before {
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 500
+    font-weight: 500;
+    font-family: "Merriweather";
 }
 
 h2.h2-text {
@@ -262,7 +263,18 @@ h2.h2-text {
 html {
     max-width: 100%;
     height: 100%;
-    padding: 0
+    padding: 0;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+    width: 0.25rem;
+    height: 0.25rem;
+}
+
+html:hover:-webkit-scrollbar {
+    display: block
 }
 
 .menu .menu-dropdown.menu-dropdown-open html,body.noscroll {
@@ -320,7 +332,7 @@ body {
     margin: 0 auto;
     align-items: stretch;
     line-height: 1.4;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 .page-content {
     width: 90%;
@@ -463,9 +475,10 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     align-content: flex-start;
-    align-items: center
+
 }
 
 .image {
@@ -603,19 +616,20 @@ div[data-page=about] .about-content {
     text-align: left;
     line-height: 2em;
     padding-bottom: 3rem;
-    font-size: 1em;
+    font-size: 1.125em;
     margin: auto
 }
 
 .about-content {
     flex: 1;
+    font-size: 1.125em;
     width: 80%;
     margin: auto;
     max-width: 800px
 }
 
 .about-desc li {
-    font-size: 1em
+    font-size: 1.125em;
 }
 
 .about-title {
@@ -730,9 +744,9 @@ i.fa {
         display: none
     }
 
-    div[data-page=about] .row {
-        justify-content: flex-start;
-        align-items: flex-start
+    div[data-page=work] .row {
+        align-content: flex-start;
+        align-items: center;
     }
 
     .about-title {
@@ -841,7 +855,7 @@ i.fa {
     }
 
     .header-text {
-        font-size: 1em;
+        font-size: 1.125em;
         width: 100%;
         line-height: 1.5em;
         margin: 0;
@@ -1052,22 +1066,22 @@ i.fa {
         margin: auto;
     }
 
-    .col-md-4.text-left {
+    .col-md-4 {
         width: 33%;
         margin-bottom: 20px;
 
     }
 
-    div[data-page=work] .col-md-4.text-left {
+    div[data-page=work] .col-md-4{
         display: flex;
         align-items: center;
     }
 
-    .col-md-6.text-left {
+    .col-md-6 {
         width: 50%;
         margin-bottom: 20px
     }
-    .col-md-8.text-left {
+    .col-md-8 {
         width: 66%;
         margin-bottom: 20px;
         margin-left: 0;
