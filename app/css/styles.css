@@ -250,6 +250,15 @@ h2 {
     font-weight: 500
 }
 
+h2.h2-text {
+    text-transform: uppercase;
+    font-family: "Lato";
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #888;
+    font-size: 0.9em;
+}
+
 html {
     max-width: 100%;
     height: 100%;
@@ -292,12 +301,9 @@ a.underline:hover {
     border-bottom: 2px dotted #47b9c5;
 }
 
-b,h3 {
-    font-weight: 600
-}
-
 b {
-    font-size: 1em
+    font-size: 1em;
+    font-weight: 600
 }
 
 h3 {
@@ -498,7 +504,7 @@ h1.subtitle,h1.title {
     font-size: 200%;
     text-align: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0.5em auto;
     font-weight: 500
 }
@@ -795,6 +801,9 @@ i.fa {
     }
     .tab-nav {
         display: flex;
+        justify-content: center;
+    }
+    div[data-page=work] .tab-nav {
         justify-content: left;
     }
 
@@ -1053,6 +1062,8 @@ i.fa {
         width: 66%;
         margin-bottom: 20px;
         margin-left: 0;
+        display: flex;
+        align-items: center;
     }
 
     .text-left {
