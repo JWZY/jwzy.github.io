@@ -461,7 +461,7 @@ html,ul {
     color: #47b9c5;
     font-weight: 600
 }
-.website-header {
+.page-header {
     height: 50vh;
     width: 100vw;
 }
@@ -629,7 +629,7 @@ div[data-page=about] .about-content {
 }
 
 .about-desc li {
-    font-size: 1.125em;
+    font-size: 1em;
 }
 
 .about-title {
@@ -853,7 +853,9 @@ i.fa {
     .logo {
         height: 40px
     }
-
+    .image.left-align {
+        margin-left: 0
+    }
     .header-text {
         font-size: 1.125em;
         width: 100%;
@@ -886,8 +888,21 @@ i.fa {
         margin-top: 0
     }
 
-    .image.hero {
-        width: 100vw
+    .hero {
+        width: 100vw;
+        padding: 50px;
+    }
+
+    .hero .h2-text {
+        color: white;
+        font-size: 0.8em;
+    }
+
+    .hero p {
+        color: white;
+        margin-bottom: 0.5em;
+        margin-top: 0;
+        /*font-size: 0.9em;*/
     }
 
     video.narrow {
@@ -1036,19 +1051,19 @@ i.fa {
         color: #999;
     }
 
-    .website-header {
+    .page-header {
         height: 70vh;
         width: 100vw;
     }
 
-    .website-header .title {
+    .page-header .title {
         text-align: left;
         margin-left: 0;
         font-family: 'Merriweather', serif;
         font-weight: 700
     }
 
-    .website-header .subtitle {
+    .page-header .subtitle {
         text-align: left;
         margin-left: 0;
     }
@@ -1069,7 +1084,9 @@ i.fa {
     .col-md-4 {
         width: 33%;
         margin-bottom: 20px;
-
+/*        display: flex;
+        align-items: center;
+*/
     }
 
     div[data-page=work] .col-md-4{
@@ -1078,8 +1095,10 @@ i.fa {
     }
 
     .col-md-6 {
-        width: 50%;
-        margin-bottom: 20px
+        width: 47%;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
     }
     .col-md-8 {
         width: 66%;
