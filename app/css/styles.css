@@ -895,6 +895,7 @@ i.fa {
 
     .hero .h2-text {
         color: white;
+        opacity: 0.5;
         font-size: 0.8em;
     }
 
@@ -1052,7 +1053,7 @@ i.fa {
     }
 
     .page-header {
-        height: 70vh;
+        height: 80vh;
         width: 100vw;
     }
 
