@@ -516,7 +516,7 @@ div[data-page=work] a {
 
 h1.subtitle,h1.title {
     padding: 24px 0;
-    font-size: 200%;
+    font-size: 32px;
     text-align: center;
     width: 100%;
     max-width: 800px;
@@ -525,7 +525,7 @@ h1.subtitle,h1.title {
 }
 
 h1.subtitle {
-    font-size: 140%;
+    font-size: 22px;
     margin: -2em auto 1em;
     /*color: #888;*/
     font-weight: 400
