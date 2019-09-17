@@ -112,7 +112,7 @@ i:before {
 
 .previous .nav-direction {
     display: none;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.5s;
@@ -121,7 +121,7 @@ i:before {
 
 .previous .nav-name {
     display: none;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     transition: all 0.5s;
     left: -20px;
     margin: 0;
@@ -160,7 +160,7 @@ i:before {
 
 .next .nav-direction {
     display: none;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.5s;
@@ -169,7 +169,7 @@ i:before {
 
 .next .nav-name {
     display: none;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     transition: all 0.5s;
     right: -20px;
     margin: 0;
@@ -246,9 +246,9 @@ i.fa-bars:before {
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: "Merriweather";
+    font-size: 1.25em;
+    /*font-weight: 500;*/
+    /*font-family: "Merriweather";*/
 }
 
 h2.h2-text {
@@ -260,6 +260,18 @@ h2.h2-text {
     font-size: 0.9em;
 }
 
+.hero .h2-text {
+    color: white;
+    opacity: 0.5;
+    font-size: 0.8em;
+}
+
+.hero p {
+    color: white;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+}
+
 html {
     max-width: 100%;
     height: 100%;
@@ -269,8 +281,8 @@ html {
 
 html::-webkit-scrollbar {
     display: none;
-    width: 0.25rem;
-    height: 0.25rem;
+    width: 0.25em;
+    height: 0.25em;
 }
 
 html:hover:-webkit-scrollbar {
@@ -321,7 +333,7 @@ b {
 }
 
 h3 {
-    font-size: 1.1rem
+    font-size: 1.1em
 }
 
 body {
@@ -338,6 +350,7 @@ body {
     width: 90%;
     max-width: 1366px;
     margin:auto;
+    font-size: 1.125em;
 }
 
 .logo-container {
@@ -384,6 +397,14 @@ html,ul {
     padding: 8px 12px;
     transform: scale(1.1,1);
     font-size: 0.9em;
+}
+
+h2.focal {
+    font-weight: 900;
+    font-size: 300%;
+    line-height: 0.5em;
+    text-transform: uppercase;
+    color: #FF715B;
 }
 
 .menu .menu-desktop .menu-bullet {
@@ -476,7 +497,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     align-content: flex-start;
 
 }
@@ -586,13 +607,13 @@ h1.title {
 }
 
 .nav-list.social-media li,.tag li {
-    border-radius: 10rem;
+    border-radius: 10em;
     color: #666;
     border: 2px solid rgba(0,0,0,.1);
-    margin: 1rem 0.7rem 0.1rem 0rem;
+    margin: 1em 0.7em 0.1em 0em;
     text-transform: capitalize;
     font-weight: 400;
-    padding: .5rem 1rem .5rem
+    padding: .5em 1em .5em
 }
 
 .noselect {
@@ -612,20 +633,35 @@ div[data-page=about] .about-content {
     margin-bottom: 24px
 }
 
+div.quote {
+    display: block;
+}
+.rounded {
+    border-radius: 20px;
+}
+p.quote {
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 150%;
+    margin-bottom: 2em;
+}
+p.author {
+    font-size: 1.1em;
+    opacity: 0.8;
+    text-align: right;
+}
 .about-desc {
     text-align: left;
     line-height: 2em;
-    padding-bottom: 3rem;
-    font-size: 1.125em;
+    padding-bottom: 3em;
     margin: auto
 }
 
 .about-content {
     flex: 1;
-    font-size: 1.125em;
     width: 80%;
     margin: auto;
-    max-width: 800px
+    max-width: 860px
 }
 
 .about-desc li {
@@ -635,7 +671,7 @@ div[data-page=about] .about-content {
 .about-title {
     font-size: 1.2em;
     font-weight: 600;
-    padding-bottom: 1.5rem
+    padding-bottom: 1.5em
 }
 
 .active {
@@ -735,6 +771,12 @@ i.fa {
     font: 14px/1
 }
 
+.hero {
+    width: 100vw;
+    padding: 50px;
+    font-size: 1.125em;
+}
+
 @media (min-width:640px) {
     .menu .menu-desktop {
         display: flex
@@ -756,10 +798,10 @@ i.fa {
     .about-desc,.about-title {
         text-align: left
     }
-
+/*
     .about-desc {
-        font-size: 1em;
-    }
+        font-size: 1.125em;
+    }*/
 
     .about-desc li {
         font-size: 1em;
@@ -804,9 +846,10 @@ i.fa {
         transform: scale(0.98);
     }
 
-/*    .project-wrapper:first-child {
-        margin-right: 4%
-    }*/
+    .hoverzoom:hover {
+        transition: all .25s;
+        transform: scale(0.98);
+    }
 
     .tab-nav.desktop {
         display: block;
@@ -859,7 +902,7 @@ i.fa {
     .header-text {
         font-size: 1.125em;
         width: 100%;
-        line-height: 1.5em;
+        line-height: 2em;
         margin: 0;
     }
 
@@ -886,24 +929,6 @@ i.fa {
 
     .social-media.contact,video {
         margin-top: 0
-    }
-
-    .hero {
-        width: 100vw;
-        padding: 50px;
-    }
-
-    .hero .h2-text {
-        color: white;
-        opacity: 0.5;
-        font-size: 0.8em;
-    }
-
-    .hero p {
-        color: white;
-        margin-bottom: 0.5em;
-        margin-top: 0;
-        /*font-size: 0.9em;*/
     }
 
     video.narrow {
@@ -1067,6 +1092,7 @@ i.fa {
     .page-header .subtitle {
         text-align: left;
         margin-left: 0;
+        line-height: 2em;
     }
 
     img.zoom-in:hover {
@@ -1083,7 +1109,7 @@ i.fa {
     }
 
     .col-md-4 {
-        width: 33%;
+        width: 31%;
         margin-bottom: 20px;
 /*        display: flex;
         align-items: center;
@@ -1093,6 +1119,7 @@ i.fa {
     div[data-page=work] .col-md-4{
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
 
     .col-md-6 {
