@@ -247,8 +247,8 @@ i.fa-bars:before {
 
 h2 {
     font-size: 1.25em;
-    /*font-weight: 500;*/
-    /*font-family: "Merriweather";*/
+    font-weight: 600;
+    /*font-family: "Bree Serif";*/
 }
 
 h2.h2-text {
@@ -277,16 +277,6 @@ html {
     height: 100%;
     padding: 0;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-
-html::-webkit-scrollbar {
-    display: none;
-    width: 0.25em;
-    height: 0.25em;
-}
-
-html:hover:-webkit-scrollbar {
-    display: block
 }
 
 .menu .menu-dropdown.menu-dropdown-open html,body.noscroll {
@@ -401,10 +391,11 @@ html,ul {
 
 h2.focal {
     font-weight: 900;
-    font-size: 300%;
+    font-size: 200%;
     line-height: 0.5em;
     text-transform: uppercase;
     color: #FF715B;
+    font-family: 'Bree Serif', serif;
 }
 
 .menu .menu-desktop .menu-bullet {
@@ -567,11 +558,11 @@ h1.ascii {
 
 div[data-page=about] h1.title {
     margin: 0 auto 1em;
-    font-family: 'Merriweather', serif;
+    font-family: 'Bree Serif', serif;
 }
 
 h1.title {
-    font-family: 'Merriweather', serif;
+    font-family: 'Bree Serif', serif;
     font-weight: 700
 }
 
@@ -615,6 +606,30 @@ h1.title {
     font-weight: 400;
     padding: .5em 1em .5em
 }
+
+ol.insights {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+ol li.insights {
+  counter-increment: my-awesome-counter;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+ol li.insights::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 1rem;
+  line-height: 1;
+  color: #0078D4;
+  font-family: 'Bree Serif', serif;
+}
+
 
 .noselect {
     user-select: none
@@ -717,7 +732,7 @@ p.author {
 
 .subheader-text {
     text-transform: capitalize;
-    font-family: 'Merriweather', serif;
+    font-family: 'Bree Serif', serif;
     font-weight: 600;
     font-size: 1.40em;
     line-height: 1em
@@ -1085,7 +1100,7 @@ i.fa {
     .page-header .title {
         text-align: left;
         margin-left: 0;
-        font-family: 'Merriweather', serif;
+        font-family: 'Bree Serif', serif;
         font-weight: 700
     }
 
@@ -1129,7 +1144,7 @@ i.fa {
         align-items: center;
     }
     .col-md-8 {
-        width: 66%;
+        width: 63%;
         margin-bottom: 20px;
         margin-left: 0;
         display: flex;
