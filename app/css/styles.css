@@ -821,9 +821,9 @@ i.fa {
     .about-desc li {
         font-size: 1em;
     }
-    b {
+/*    b {
         font-size: 1.1em
-    }
+    }*/
     div[data-page=about] .image {
         max-width: 253px
     }
