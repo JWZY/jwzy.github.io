@@ -270,6 +270,7 @@ h2.h2-text {
     color: white;
     margin-bottom: 0.5em;
     margin-top: 0;
+    line-height: 1.5em;
 }
 
 html {
@@ -325,7 +326,9 @@ b {
 h3 {
     font-size: 1.1em
 }
-
+.flex-start {
+    align-items: flex-start;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -480,6 +483,7 @@ h2.focal {
 }
 .page-header {
     width: 100vw;
+    margin-bottom: 3em;
 }
 
 main {
@@ -496,6 +500,13 @@ main {
     align-items: center;
     align-content: flex-start;
 
+}
+
+.bar-quote {
+    /*color: ;*/
+    border-left: 5px solid #0078D4;
+    padding: 0.5em;
+    padding-left: 1.5em;
 }
 
 .image {
@@ -622,6 +633,8 @@ ol li.insights {
   counter-increment: my-awesome-counter;
   font-size: 1.25em;
   font-weight: 700;
+display: flex;
+align-items: center;
   margin-bottom: 1em;
 }
 ol li.insights::before {
@@ -634,6 +647,9 @@ ol li.insights::before {
   font-family: 'Bree Serif', serif;
 }
 
+.flex {
+    display: flex;
+}
 
 .noselect {
     user-select: none
@@ -650,6 +666,14 @@ ol li.insights::before {
 
 div[data-page=about] .about-content {
     margin-bottom: 24px
+}
+
+div[data-page=uken] .focal {
+    color: #ff6f17;
+}
+
+div[data-page=uken] ol li.insights::before {
+    color: #ff6f17;
 }
 
 div.quote {
@@ -741,6 +765,12 @@ p.author {
     text-align: center
 }
 
+.col-md-8 {
+    width: 100%;
+    margin-top: 1em;
+    text-align: center
+}
+
 .project-wrapper {
     margin-bottom: 30px
 }
@@ -817,6 +847,7 @@ i.fa {
     width: 100vw;
     padding: 50px;
     font-size: 1.125em;
+    margin-bottom: 3em;
 }
 
 @media (min-width:640px) {
@@ -1167,17 +1198,19 @@ i.fa {
     .col-md-6 {
         width: 47%;
         margin-bottom: 20px;
-        display: flex;
+        /*display: flex;*/
         align-items: center;
     }
     .col-md-8 {
         width: 63%;
         margin-bottom: 20px;
         margin-left: 0;
-        display: flex;
+        /*display: flex;*/
         align-items: center;
     }
-
+    .flex-start {
+        align-items: flex-start;
+    }
     .text-left {
         text-align: left
     }

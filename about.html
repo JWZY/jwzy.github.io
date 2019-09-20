@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Javan Wang is a Toronto based product designer.">
+	<meta name="author" content="Javan">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="javan wang, engineering, waterloo, mhcid, seattle, designer, design, product design, toronto, uken, microsoft, intel, noom">
+
+	<meta http-equiv="Cache-control" content="public">
+
+	<meta property="og:title" content="Javan Wang">
+	<meta property="og:description" content="Javan Wang is a Toronto based product designer.">
+	<meta property="og:image" content="https://javanwang.com/app/img/meta.png">
+	<title>Javan Wang | Product Designer</title>
+	<link rel="shortcut icon" href="app/img/favicon.ico">
+	<link rel="stylesheet" href="app/css/styles.css" inline>
+</head>
+
+<body>
+
+	<main>
+		<div class="page-content">
+			<div class="row">
+				<img class="image portrait" src="app/img/portrait.jpg">
+			</div>
+
+			<div class="about-content">
+				<div class="row">
+					<br>
+					<br>
+					<h1 class="title">Hey! I’m Javan!</h1>
+					<h1 class="subtitle">I previously worked with <a class= "underline" href="https://www.microsoft.com/en-us/education/education-workshop/activity-library.aspx">Microsoft Education</a>, <a class= "underline" href="https://www.microsoft.com/en-us/hololens/hardware">Microsoft HoloLens</a>, and <a class= "underline" href="https://www.intel.com/content/www/us/en/retail/solutions/documents/drive-innovation-artificial-intelligence.html">Intel's AI Innovation</a>.</h1>
+
+					<div class="about-desc">
+						I am a product designer who has been practicing UX since early 2014. My focus is in helping teams create evidence-driven design responses through storytelling. I firmly believe the best works are born as the collective contribution of groups. Currently I hold a Master's degree in HCI and Design, and a B. of Applied Sciences (B. of Engineering).
+						<br/><br/>
+
+						Previously worked on a design research team with Microsoft Hololens, and design prototype team from Intel. During my undergrad, I completed design internship placements at <a class= "underline" href="https://www.noom.com/">Noom Inc</a>, <a class= "underline" href="https://www.uken.com/">Uken Games</a>, and <a class= "underline" href="https://www.symbilitysolutions.com/symbility-intersect/">INTERSECT</a>. 
+						<br/><br/>
+
+						<a class= "underline" href="mailto:javan.z.wang@gmail.com">Let's chat!</a>
+					</div>
+				</div>
+
+				<div class="row flex-start">
+					<div class="col-md-4 text-left">
+						<h2>Skills</h2>
+						<p>User experience design</p>
+						<p>Design ethnographic research</p>
+						<p>Usability testing</p>
+						<p>Frontend development</p>
+						<p>Interaction design</p>
+						<p>Rapid prototyping</p>
+					</div>
+					<div class="col-md-4 text-left">
+						<h2>Tools</h2>
+						<p>Sketch</p>
+						<p>Figma</p>
+						<p>Photoshop</p>
+						<p>AfterEffects</p>
+						<p>Premiere</p>
+						<p>InVision / Marvel / Flinto</p>
+					</div>
+					<div class="col-md-4 text-left">
+						<h2>Interests</h2>
+						<p>Vector illustrations</p>
+						<p>Homecooking</p>
+						<p>Tabletop RPGs</p>
+						<p>Video games</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Bree+Serif|Roboto&display=swap" rel="stylesheet">
+	</noscript>
+	<script>
+		var loadDeferredStyles = function() {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement)
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+		webkitRequestAnimationFrame || msRequestAnimationFrame;
+		if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+		else window.addEventListener('load', loadDeferredStyles);
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="app/js/fastclick.min.js" inline></script>
+	<script type="text/javascript" src="app/js/pace.min.js" inline></script>
+	<script type="text/javascript" src="app/js/main.js" inline></script>
+	<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+	<script>
+		mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
+	</script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-87678506-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	<script>
+		$(function(){     
+			$.ajax({  
+				type: "GET",
+				url: "header.html",  
+				dataType: "html",
+				success: function(answer) {  
+					$("body").append(answer);  
+				},
+				error: function(){
+					alert("failed call!!!");
+				} 
+			}); 
+			return false;  
+		});
+	</script> 
+
+	<script>
+		$(function(){     
+			$.ajax({  
+				type: "GET",
+				url: "footer.html",  
+				dataType: "html",
+				success: function(answer) {  
+					$("body").append(answer);  
+				},
+				error: function(){
+					alert("failed call!!!");
+				} 
+			}); 
+			return false;  
+		});
+	</script> 
+</body>
+</html>
