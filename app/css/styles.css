@@ -222,7 +222,7 @@ i.fa.fa-chevron-up::before {
 
 
 header {
-    position: relative;
+    position: absolute;
     z-index: 100;
     background-color: #fff;
     width: 100%
@@ -389,12 +389,17 @@ html,ul {
     font-size: 0.9em;
 }
 
+.threepoints {
+    font-size: 72px;
+color:  #0278D3;
+}
+
 h2.focal {
     font-weight: 900;
     font-size: 200%;
     line-height: 0.5em;
     text-transform: uppercase;
-    color: #FF715B;
+    color: #0178D3;
     font-family: 'Bree Serif', serif;
 }
 
@@ -474,13 +479,13 @@ h2.focal {
     font-weight: 600
 }
 .page-header {
-    height: 50vh;
     width: 100vw;
 }
 
 main {
     flex: 1;
-    flex-grow: 1
+    flex-grow: 1;
+    margin-top: 100px;
 }
 
 .row {
@@ -519,7 +524,6 @@ main {
 
 video {
     width: 100%;
-    margin-top: 50px
 }
 
 div[data-page=work] a {
@@ -660,6 +664,29 @@ p.quote {
     line-height: 150%;
     margin-bottom: 2em;
 }
+
+p.quote::before {
+    content: "\f10d";
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    position: relative;
+    left: -10px;
+    opacity: 0.4;
+    color: #0278d3;
+}
+
+p.quote::after {
+    content: "\f10e";
+    font-family: 'FontAwesome';
+    font-size: 25px;
+    opacity: 0.4;
+    color: #0278d3;
+}
+
+.hero .quote::before,.hero .quote::after {
+    color: white;
+}
+
 p.author {
     font-size: 1.1em;
     opacity: 0.8;
