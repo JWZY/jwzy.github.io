@@ -225,10 +225,14 @@ i.fa.fa-chevron-up::before {
 
 
 header {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     background-color: #fff;
     width: 100%
+}
+
+.floatingNav {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 img {
@@ -350,7 +354,7 @@ body {
 }
 
 .logo-container {
-    padding: 30px 30px 30px 0;
+    padding: 20px 20px 20px 0;
     float: left
 }
 
@@ -360,7 +364,7 @@ html,ul {
 
 .logo {
     vertical-align: middle;
-    height: 30px
+    height: 40px
 }
 
 .menu {
@@ -378,12 +382,12 @@ html,ul {
 }
 
 .menu .menu-desktop {
-    padding-top: 35px;
-    display: none;
+    padding-top: 25px;
+    display: flex;/*
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-content: flex-start;
+    align-content: flex-start;*/
     float: right
 }
 
@@ -1013,9 +1017,6 @@ i.fa {
         /*opacity: 1*/
     }
 
-    .logo {
-        height: 40px
-    }
     .image.left-align {
         margin-left: 0
     }

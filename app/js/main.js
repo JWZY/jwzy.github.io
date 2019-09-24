@@ -220,3 +220,11 @@ function forEach(array, callback, scope) {
     callback.call(scope, array[i]);
   }
 }
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 10) {
+        $('header').addClass('floatingNav');
+    } else {
+        $('header').removeClass('floatingNav');
+    }
+});
