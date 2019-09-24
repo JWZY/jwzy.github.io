@@ -510,6 +510,17 @@ main {
     border-left: 5px solid #0078D4;
     padding: 0.5em;
     padding-left: 1.5em;
+    margin: none;
+}
+
+main.hololens .bar-quote {
+    /*color: ;*/
+    border-left: 5px solid #00c5e8;
+    margin: none;
+}
+
+main.hololens ol li.insights::before {
+    color: #00c5e8;
 }
 
 .image {
@@ -682,6 +693,10 @@ main.about .about-content {
     margin-bottom: 24px
 }
 
+main.hololens .focal {
+    color: #00c5e8;
+}
+
 main.uken .focal {
     color: #ff6f17;
 }
@@ -692,14 +707,15 @@ main.uken ol li.insights::before {
 
 div.quote {
     display: block;
+    max-width: 325px;
 }
 .rounded {
     border-radius: 20px;
 }
 p.quote {
-    font-size: 1.2em;
+    font-size: 1em;
     font-style: italic;
-    line-height: 150%;
+    line-height: 2em;
     margin-bottom: 2em;
 }
 
@@ -707,8 +723,9 @@ p.quote::before {
     content: "\f10d";
     font-family: 'FontAwesome';
     font-size: 25px;
-    position: relative;
-    left: -10px;
+    position: absolute;
+    transform: translate(-30px);
+
     opacity: 0.4;
     color: #0278d3;
 }
@@ -719,14 +736,26 @@ p.quote::after {
     font-size: 25px;
     opacity: 0.4;
     color: #0278d3;
+    position: absolute;
+    transform: translate(10px);
 }
+
+main.hololens p.quote::before {
+    color: #00c5e8;
+}
+
+main.hololens p.quote::after {
+    color: #00c5e8;
+}
+
+
 
 .hero .quote::before,.hero .quote::after {
     color: white;
 }
 
 p.author {
-    font-size: 1.1em;
+    font-size: 1em;
     opacity: 0.8;
     text-align: right;
 }
@@ -739,7 +768,6 @@ p.author {
 
 .about-content {
     flex: 1;
-    width: 80%;
     margin: auto;
     max-width: 860px
 }
@@ -1207,7 +1235,10 @@ i.fa {
         align-items: center;
 */
     }
-
+    div.quote {
+        display: block;
+        max-width: 600px;
+    }
     main.project .col-md-4{
         display: flex;
         align-items: center;
