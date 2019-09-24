@@ -1,4 +1,4 @@
-$(document).ready(function(){$("body").hide().fadeIn(1000);});
+// $(document).ready(function(){$("body").hide().fadeIn(1000);});
 
 document.addEventListener("DOMContentLoaded", main, false);
 
@@ -116,6 +116,70 @@ function main () {
         currentPageName = newPage;
     }
 }
+
+$(function(){     
+    $.ajax({  
+        type: "GET",
+        url: "header.html",  
+        dataType: "html",
+        success: function(answer) {  
+            $("body").append(answer);  
+        },
+        error: function(){
+            alert("failed call!!!");
+        } 
+    }); 
+    return false;  
+});
+
+$(document).ready(function() {
+  $(".animsition").animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: [ 'animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay : false,
+    overlayClass : 'animsition-overlay-slide',
+    overlayParentElement : 'body',
+    transition: function(url){ window.location.href = url; }
+  });
+});
+
+
+$(function(){     
+    $.ajax({  
+        type: "GET",
+        url: "footer.html",  
+        dataType: "html",
+        success: function(answer) {  
+            $("body").append(answer);  
+        },
+        error: function(){
+            alert("failed call!!!");
+        } 
+    }); 
+    return false;  
+});
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-87678506-1', 'auto');
+ga('send', 'pageview');
 
 // // ===== Scroll to Top ==== 
 // $(window).scroll(function() {

@@ -17,6 +17,9 @@ i:before {
   user-select: none;
 }
 
+.twitter-tweet {
+    margin: auto;
+}
 .pace-inactive {
   display: none;
 }
@@ -537,7 +540,7 @@ video {
     width: 100%;
 }
 
-div[data-page=work] a {
+main.project a {
     min-width: 50%
 }
 
@@ -571,7 +574,7 @@ h1.ascii {
     font-size: 500%
 }
 
-div[data-page=about] h1.title {
+main.about h1.title {
     margin: 0 auto 1em;
     font-family: 'Bree Serif', serif;
 }
@@ -579,6 +582,17 @@ div[data-page=about] h1.title {
 h1.title {
     font-family: 'Bree Serif', serif;
     font-weight: 700
+}
+
+h1.title.hl-highlight {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400
+}
+
+span.hl-highlight {
+    font-family: 'Bree Serif', serif;
+    font-weight: 400;
+    color: #00c5e8;
 }
 
 .tab-nav ul {
@@ -664,15 +678,15 @@ ol li.insights::before {
     font-size: 90%
 }
 
-div[data-page=about] .about-content {
+main.about .about-content {
     margin-bottom: 24px
 }
 
-div[data-page=uken] .focal {
+main.uken .focal {
     color: #ff6f17;
 }
 
-div[data-page=uken] ol li.insights::before {
+main.uken ol li.insights::before {
     color: #ff6f17;
 }
 
@@ -742,7 +756,7 @@ p.author {
 
 .active {
     display: block;
-    animation: fadeIn .75s
+    /*animation: fadeIn .75s*/
 }
 
 .hidden {
@@ -757,6 +771,11 @@ p.author {
     width: 100%;
     margin-top: 1em;
     text-align: center
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
 }
 
 .col-md-6 {
@@ -859,7 +878,7 @@ i.fa {
         display: none
     }
 
-    div[data-page=work] .row {
+    main.project .row {
         align-content: flex-start;
         align-items: center;
     }
@@ -882,7 +901,7 @@ i.fa {
 /*    b {
         font-size: 1.1em
     }*/
-    div[data-page=about] .image {
+    main.about .image {
         max-width: 253px
     }
 
@@ -936,7 +955,7 @@ i.fa {
         display: flex;
         justify-content: center;
     }
-    div[data-page=work] .tab-nav {
+    main.project .tab-nav {
         justify-content: left;
     }
 
@@ -1189,7 +1208,7 @@ i.fa {
 */
     }
 
-    div[data-page=work] .col-md-4{
+    main.project .col-md-4{
         display: flex;
         align-items: center;
         justify-content: space-around;

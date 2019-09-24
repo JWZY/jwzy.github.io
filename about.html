@@ -20,7 +20,7 @@
 
 <body>
 
-	<main>
+	<main class="about animsition">
 		<div class="page-content">
 			<div class="row">
 				<img class="image portrait" src="app/img/portrait.jpg">
@@ -75,77 +75,36 @@
 			</div>
 		</div>
 	</main>
+		<noscript id="deferred-styles">
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Bree+Serif|Roboto&display=swap" rel="stylesheet">
+		</noscript>
+		<script>
+			var loadDeferredStyles = function() {
+				var addStylesNode = document.getElementById("deferred-styles");
+				var replacement = document.createElement("div");
+				replacement.innerHTML = addStylesNode.textContent;
+				document.body.appendChild(replacement)
+				addStylesNode.parentElement.removeChild(addStylesNode);
+			};
+			var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+			webkitRequestAnimationFrame || msRequestAnimationFrame;
+			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+			else window.addEventListener('load', loadDeferredStyles);
+		</script>
 
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Bree+Serif|Roboto&display=swap" rel="stylesheet">
-	</noscript>
-	<script>
-		var loadDeferredStyles = function() {
-			var addStylesNode = document.getElementById("deferred-styles");
-			var replacement = document.createElement("div");
-			replacement.innerHTML = addStylesNode.textContent;
-			document.body.appendChild(replacement)
-			addStylesNode.parentElement.removeChild(addStylesNode);
-		};
-		var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-		webkitRequestAnimationFrame || msRequestAnimationFrame;
-		if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-		else window.addEventListener('load', loadDeferredStyles);
-	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="app/js/fastclick.min.js" inline></script>
-	<script type="text/javascript" src="app/js/pace.min.js" inline></script>
-	<script type="text/javascript" src="app/js/main.js" inline></script>
-	<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
-	<script>
-		mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
-	</script>
+		<link rel="stylesheet" href="app/css/animsition.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="app/js/fastclick.min.js" inline></script>
+		<script type="text/javascript" src="app/js/pace.min.js" inline></script>
+		<script type="text/javascript" src="app/js/main.js" inline></script>
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+		<script>
+			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
+		</script>
+		<script src="app/js/animsition.min.js"></script>
 
-		ga('create', 'UA-87678506-1', 'auto');
-		ga('send', 'pageview');
-
-	</script>
-
-	<script>
-		$(function(){     
-			$.ajax({  
-				type: "GET",
-				url: "header.html",  
-				dataType: "html",
-				success: function(answer) {  
-					$("body").append(answer);  
-				},
-				error: function(){
-					alert("failed call!!!");
-				} 
-			}); 
-			return false;  
-		});
-	</script> 
-
-	<script>
-		$(function(){     
-			$.ajax({  
-				type: "GET",
-				url: "footer.html",  
-				dataType: "html",
-				success: function(answer) {  
-					$("body").append(answer);  
-				},
-				error: function(){
-					alert("failed call!!!");
-				} 
-			}); 
-			return false;  
-		});
-	</script> 
-</body>
-</html>
+	</body>
+	</html>
