@@ -231,6 +231,11 @@ header {
     width: 100%
 }
 
+.medium-zoom-image--open {
+    z-index: 999;
+}
+
+
 .floatingNav {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -402,15 +407,6 @@ html,ul {
 .threepoints {
     font-size: 72px;
 color:  #0278D3;
-}
-
-h2.focal {
-    font-weight: 900;
-    font-size: 200%;
-    line-height: 0.5em;
-    text-transform: uppercase;
-    color: #0178D3;
-    font-family: 'Bree Serif', serif;
 }
 
 .menu .menu-desktop .menu-bullet {
@@ -697,12 +693,32 @@ main.about .about-content {
     margin-bottom: 24px
 }
 
+h2.focal {
+    font-weight: 900;
+    font-size: 200%;
+    line-height: 0.5em;
+    color: #0178D3;
+    font-family: 'Bree Serif', serif;
+}
+
+main.chiron .focal {
+    text-transform: uppercase;
+}
+
 main.hololens .focal {
     color: #00c5e8;
 }
 
+b.stem {
+    color: #F1511B;
+}
+
 main.uken .focal {
     color: #ff6f17;
+}
+
+main.stem .focal {
+    color: #F1511B;
 }
 
 main.uken ol li.insights::before {
@@ -750,6 +766,14 @@ main.hololens p.quote::before {
 
 main.hololens p.quote::after {
     color: #00c5e8;
+}
+
+main.stem p.quote::before {
+    color: #F1511B;
+}
+
+main.stem p.quote::after {
+    color: #F1511B;
 }
 
 
