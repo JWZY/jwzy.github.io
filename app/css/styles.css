@@ -582,7 +582,9 @@ h1.ascii {
     max-width: 600px;
     font-weight: 500;
     color: #bbb;
-    font-size: 500%
+    font-size: 500%;
+    text-align: center;
+    margin: auto;
 }
 
 main.about h1.title {
@@ -821,6 +823,10 @@ p.author {
 
 .portrait {
     border-radius: 2%
+}
+
+.circle {
+    border-radius: 50%;
 }
 
 .col-md-4 {
