@@ -515,10 +515,11 @@ h1.subtitle,h1.title {
 }
 
 h1.subtitle {
-    font-size: 22px;
-    margin: -2em auto 1em;
-    /*color: #888;*/
-    font-weight: 400
+    font-size: 20px;
+    margin: -1em auto 1em;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
 }
 
 .tab-nav ul {
@@ -771,7 +772,8 @@ p.author {
 }
 
 .portrait {
-    border-radius: 2%
+    border-radius: 2%;
+    max-width: 300px;
 }
 
 .circle {
@@ -1024,7 +1026,6 @@ i.fa {
 
     .portrait {
         border-radius: 50%;
-        max-width: 300px;
     }
 
     .social-media.contact,video {
@@ -1177,6 +1178,9 @@ i.fa {
         color: #999;
     }
 
+    .project .page-header {
+        height: 60vh;
+    }
     .page-header {
         height: 80vh;
         width: 100vw;
@@ -1193,6 +1197,7 @@ i.fa {
         text-align: left;
         margin-left: 0;
         line-height: 2em;
+        font-size: 22px;
     }
 
     img.zoom-in:hover {
