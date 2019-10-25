@@ -209,12 +209,12 @@ i.fa-bars:before {
 h2 {
     font-size: 1.25em;
     font-weight: 600;
-    /*font-family: "Bree Serif";*/
+    font-family: "Montserrat";
 }
 
 h2.h2-text {
     text-transform: uppercase;
-    font-family: "Lato";
+    font-family: "Montserrat";
     letter-spacing: 1px;
     font-weight: 700;
     color: #888;
@@ -539,21 +539,21 @@ h1.ascii {
 
 main.about h1.title {
     margin: 0 auto 1em;
-    font-family: 'Lato';
+    font-family: 'Montserrat';
 }
 
 h1.title {
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: 700
 }
 
 h1.title.hl-highlight {
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: 400
 }
 
 span.hl-highlight {
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: 400;
     color: #00c5e8;
 }
@@ -613,6 +613,7 @@ ol li.insights {
 display: flex;
 align-items: center;
   margin-bottom: 1em;
+  font-family: 'Montserrat';
 }
 ol li.insights::before {
   content: "0" counter(my-awesome-counter);
@@ -621,7 +622,7 @@ ol li.insights::before {
   margin-right: 1rem;
   line-height: 1;
   color: #0078D4;
-  font-family: 'Lato';
+  font-family: 'Montserrat';
 }
 
 .flex {
@@ -650,7 +651,7 @@ h2.focal {
     font-size: 200%;
     line-height: 0.5em;
     color: #0178D3;
-    font-family: 'Lato';
+    font-family: 'Montserrat';
 }
 
 main.chiron .focal {
@@ -827,7 +828,7 @@ main.about .row .image {
 
 .subheader-text {
     text-transform: capitalize;
-    font-family: 'Lato';
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 1.40em;
     line-height: 1em
@@ -1199,7 +1200,7 @@ i.fa {
     .page-header .title {
         text-align: left;
         margin-left: 0;
-        font-family: 'Lato';
+        font-family: 'Montserrat';
         font-weight: 700
     }
 
