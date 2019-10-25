@@ -803,7 +803,7 @@ p.author {
 }
 
 main.about .portrait {
-    max-width: 860px;
+    max-width: 100%;
 }
 
 main.about .row .image {
