@@ -539,21 +539,21 @@ h1.ascii {
 
 main.about h1.title {
     margin: 0 auto 1em;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
 }
 
 h1.title {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
     font-weight: 700
 }
 
 h1.title.hl-highlight {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
     font-weight: 400
 }
 
 span.hl-highlight {
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
     font-weight: 400;
     color: #00c5e8;
 }
@@ -621,7 +621,7 @@ ol li.insights::before {
   margin-right: 1rem;
   line-height: 1;
   color: #0078D4;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Lato';
 }
 
 .flex {
@@ -650,7 +650,7 @@ h2.focal {
     font-size: 200%;
     line-height: 0.5em;
     color: #0178D3;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
 }
 
 main.chiron .focal {
@@ -728,8 +728,6 @@ main.stem p.quote::after {
     color: #F1511B;
 }
 
-
-
 .hero .quote::before,.hero .quote::after {
     color: white;
 }
@@ -773,7 +771,7 @@ p.author {
 
 .portrait {
     border-radius: 2%;
-    max-width: 300px;
+    /*max-width: 300px;*/
 }
 
 .circle {
@@ -803,6 +801,14 @@ p.author {
     text-align: center
 }
 
+main.about .portrait {
+    max-width: 860px;
+}
+
+main.about .row .image {
+    max-width: 100%
+}
+
 .project-wrapper {
     margin-bottom: 30px
 }
@@ -821,7 +827,7 @@ p.author {
 
 .subheader-text {
     text-transform: capitalize;
-    font-family: 'Bree Serif', serif;
+    font-family: 'Lato';
     font-weight: 600;
     font-size: 1.40em;
     line-height: 1em
@@ -915,7 +921,7 @@ i.fa {
         font-size: 1.1em
     }*/
     main.about .image {
-        max-width: 253px
+        max-width: 860px
     }
 
     .project-wrapper {
@@ -1025,9 +1031,13 @@ i.fa {
     }
 
     .portrait {
-        border-radius: 50%;
+        max-width: 500px;
     }
 
+
+    main.project .portrait {
+        max-width: 275px;
+    }
     .social-media.contact,video {
         margin-top: 0
     }
@@ -1189,7 +1199,7 @@ i.fa {
     .page-header .title {
         text-align: left;
         margin-left: 0;
-        font-family: 'Bree Serif', serif;
+        font-family: 'Lato';
         font-weight: 700
     }
 
