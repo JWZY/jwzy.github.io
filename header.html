@@ -8,17 +8,17 @@
 		</div>
 
 		<div class="menu">
-<!-- 			<button class="menu-mobile">
-				<div class="noselect"><i class="fa fa-bars"></i></div>
-			</button> -->
+			<button class="menu-mobile">
+				<div class="noselect" onclick="myFunction()"><i class="fa fa-bars"></i></div>
+			</button>
 
 			<div class="menu-desktop">
 				<div data-title="work"><a href="/" class="animsition-link top-nav">Projects</a></div>
 				<div data-title="about"><a href="about" class="animsition-link top-nav">About</a></div>
 				<div><a href="app/img/javan-wang-resume.pdf" target="_blank" class="animsition-link top-nav">Resume</a></div>
 			</div>
-<!-- 
-			<div class="menu-dropdown hidden">
+
+			<div class="menu-dropdown" id="dropdown-menu">
 				<div class="menu-object">
 					<div class="noselect menu-dropdown-item" data-title="work">
 						<a class="dropdown-text animsition-link" href="/">
@@ -37,7 +37,19 @@
 					</div>
 				</div>
 				<div class="overlay"></div>
-			</div> -->
+			</div>
+
 		</div>
 	</div>
 </header>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("dropdown-menu");
+  if (x.className === "menu-dropdown") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu-dropdown";
+  }
+}
+</script>

@@ -337,7 +337,7 @@ html,ul {
 
 .menu .menu-desktop {
     padding-top: 25px;
-    display: flex;/*
+    display: none;/*
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -363,10 +363,15 @@ color:  #0278D3;
 }
 
 .menu .menu-dropdown {
+    display: none;
     position: fixed;
     left: 0;
-    top: 90px;
+    top: 80px;
     z-index: 2
+}
+
+.menu-dropdown.responsive {
+    display: block;
 }
 
 .menu .menu-object,.menu .menu-social {
