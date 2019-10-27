@@ -337,7 +337,6 @@ html,ul {
 }
 
 .menu .menu-desktop {
-    padding-top: 25px;
     display: none;/*
     flex-direction: row;
     flex-wrap: nowrap;
@@ -442,6 +441,10 @@ color:  #0278D3;
 .page-header {
     width: 100vw;
     margin-bottom: 3em;
+}
+
+main.project .page-header {
+    margin-bottom: 2em;
 }
 
 main {
@@ -828,7 +831,7 @@ main.about .row .image {
     /*color: #888;*/
     font-size: 1.1em;
     margin: auto auto 20px;
-    width: 80%;
+    width: 100%;
     line-height: 1.5em;
 }
 
@@ -895,11 +898,15 @@ i.fa {
     margin-bottom: 3em;
 }
 
+.hero h1.title {
+    font-size: 28px;
+}
+
 @media (min-width:640px) {
     .menu .menu-desktop {
-        display: flex
+        display: flex;
+        padding-top: 25px;
     }
-
     .menu .menu-dropdown,.menu .menu-mobile {
         display: none
     }
@@ -1265,6 +1272,17 @@ i.fa {
     }
     .text-left {
         text-align: left
+    }
+
+    .logo-container {
+        padding: 20px 20px 20px 0;
+        float: left
+    }
+
+    .logo {
+        vertical-align: middle;
+        height: 40px;
+        width: 40px;
     }
 
     .cheat-box {

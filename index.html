@@ -23,9 +23,20 @@
 	<title>Javan Wang | Product & UX Designer</title>
 	<link rel="shortcut icon" href="app/img/favicon.ico">
 	<link rel="stylesheet" href="app/css/styles.css" inline>
+	<style>
+		body {
+		    opacity: 1;
+		    transition: 1s opacity;
+		}
+		body.fade-out {
+		    opacity: 0;
+		    transition: none;
+		}
+	</style>
 </head>
 
 <body>
+	<script>document.body.className += ' fade-out';</script>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB33L3T"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -36,7 +47,7 @@
 			<div class="row">
 				<div class="page-header col-md-4">
 					<div>
-						<img class="image portrait" src="app/img/javan-vector.png">
+						<img class="image portrait" src="app/img/javan-vector.png" style=" max-width: 275px;">
 					</div>
 				</div>
 				<div class="page-header col-md-8 flex text-left">
@@ -58,7 +69,7 @@
 					<div class="text-wrapper">
 						<a href="chiron" class="animsition-link">
 							<h1 class="subheader-text">Chiron</h1>
-							<h2 class="h2-text">Intel Corporation + University of Washington</h2>
+							<h2 class="h2-text">Intel Corporation + UW</h2>
 							<h3 class="header-text">A Windows feature for more productive multitasking.</h3>
 						</a>
 						<div class="tab-nav">
@@ -84,7 +95,7 @@
 					<div class="text-wrapper">
 						<a href="stem" class="animsition-link">
 							<h1 class="subheader-text">Hacking STEM</h1>
-							<h2 class="h2-text">Microsoft Education + University of Washington</h2>
+							<h2 class="h2-text">Microsoft Education + UW</h2>
 							<h3 class="header-text">DIY classroom activity with data visualization for teaching elementary school science.</h3>
 						</a>
 						<div class="tab-nav">
@@ -109,7 +120,7 @@
 					<div class="text-wrapper">
 						<a href="hololens" class="animsition-link">
 							<h1 class="subheader-text">Microsoft HoloLens in Filmmaking</h1>
-							<h2 class="h2-text">Microsoft HoloLens + University of Washington</h2>
+							<h2 class="h2-text">Microsoft HoloLens + UW</h2>
 							<h3 class="header-text">UX research of filmmaking using mixed reality.</h3>
 						</a>
 						<div class="tab-nav">
@@ -182,6 +193,10 @@
 			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
 		</script>
 		<script src="app/js/animsition.min.js"></script>
-
+		<script>
+			$(function() {
+			    $('body').removeClass('fade-out');
+			});
+		</script>
 	</body>
 	</html>
