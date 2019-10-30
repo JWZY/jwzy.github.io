@@ -21,17 +21,28 @@
 	<meta property="og:description" content="Javan Wang is a Toronto based product designer.">
 	<meta property="og:image" content="https://javanwang.com/app/img/meta.png">
 	<title>Javan Wang | Product & UX Designer</title>
+	<style>
+		body {
+		    opacity: 1;
+		    transition: 1s opacity;
+		}
+		body.fade-out {
+		    opacity: 0;
+		    transition: none;
+		}
+	</style>
 	<link rel="shortcut icon" href="app/img/favicon.ico">
 	<link rel="stylesheet" href="app/css/styles.css" inline>
 </head>
 
 <body>
+	<script>document.body.className += ' fade-out';</script>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB33L3T"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<!-- #hololens -->
-	<main class="chiron animsition">
+	<main class="chiron">
 		<div class="page-content row">
 			<div class="page-header col-md-6 text-left flex">
 				<div>
@@ -635,7 +646,7 @@
 		</script>
 
 
-		<link rel="stylesheet" href="app/css/animsition.min.css">
+		<!-- <link rel="stylesheet" href="app/css/animsition.min.css"> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script type="text/javascript" src="app/js/fastclick.min.js" inline></script>
 		<script type="text/javascript" src="app/js/pace.min.js" inline></script>
@@ -646,7 +657,12 @@
 		<script>
 			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
 		</script>
-		<script src="app/js/animsition.min.js"></script>
+		<script>
+			$(function() {
+			    $('body').removeClass('fade-out');
+			});
+		</script>
+		<!-- <script src="app/js/animsition.min.js"></script> -->
 
 	</body>
 	</html>
