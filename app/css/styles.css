@@ -656,21 +656,21 @@ main.about .about-content {
 }
 
 h2.focal {
-    font-weight: 900;
-    font-size: 200%;
-    line-height: 0.5em;
+    /*font-weight: 700;*/
+    /*font-size: 150%;*/
+    /*line-height: 0.5em;*/
     color: #0178D3;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    line-height: 1;
+    color: #0078D4;
     font-family: 'Montserrat', sans-serif;
-}
-
-main.chiron .focal {
-    text-transform: uppercase;
 }
 
 main.hololens .focal {
     color: #00c5e8;
 }
-
 b.stem {
     color: #F1511B;
 }
@@ -696,8 +696,8 @@ div.quote {
 }
 p.quote {
     font-size: 1em;
-    font-style: italic;
     line-height: 2em;
+    font-weight: 600;
     margin-bottom: 2em;
 }
 
