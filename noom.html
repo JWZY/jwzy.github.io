@@ -84,7 +84,7 @@
 			<div class="page-content">
 				<div class="row">
 					<div class="about-content">
-						<h2>The Situation</h2>
+						<h1 class="title">The Situation</h1>
 						<div class="about-desc">
 							The frontend development and design team were required to build out responsive enrollment sites that are available for whitelabeling for healthcare provider clients.
 							<br><br>
@@ -93,32 +93,67 @@
 							At the same time, the main mobile app for Noom Coach supported more than 15 different screen sizes. With the large variance in mobile screen sizes, it was quickly becoming tedious for us to specify those interactions manually every time a feature needed to be pushed out.
 						</div>
 
-	 					<div class="about-desc">
-
-						<h2>The Task</h2>
-						We jumped into research by understanding how similar organizations have tried to tackle similar problems. One of the things I found were that similar companies have been addressing the issue of remaking design components and aspects of design systems. <br><br>
-						A number of articles on Medium pointed to the atomic design system, something Brad Frost talks about in his book.
-	 					<div class="row inline-image">
-							<img class="image shadow" data-action="zoom" src="http://atomicdesign.bradfrost.com/images/content/atomic-design-molecules.png" tabindex="0">
-							<p class="caption">Building blocks of an atomic design system</p>
-						</div>
 
 
+						<h1 class="title">The Task</h1>
+						<div class="about-desc">
 	 					To address this problem, the proposed solution was to establish a shared style guide which documents the behaviour, state, and visuals of each UI element. Providing a coherent, and scalable style guide allowed us to maintain the visual language throughout the different workflows, while significantly reducing the development time required for each deployment.
 	 					</div>
 
-	 					<div class="row inline-image">
-							<img class="image shadow" data-action="zoom" src="app/img/style-guide-full.png" tabindex="0">
-							<p class="caption">A huge ecosystem of all the different UI components</p>
-						</div><br>
-
-						<div class="about-desc">
-	 					A lot of these components were common elements that have been used in different parts of the app and web flow previously. But since the projects were handled by different designers across multiple sprints, there were a lot of discrepancies between the behaviour and appearance of these components.  <br><br>
-
-	 					The biggest challenge I faced while designing the style guide was trying to keep the visuals in accordance with the brand, while addressing all the different behaviours and states. 
+						<h1 class="title">Actions taken</h1>
+	 					<div class="about-desc">
+						We jumped into research by understanding how similar organizations have tried to tackle similar problems. One of the things I found were that similar companies have been addressing the issue of remaking design components and aspects of design systems. <br><br>
+						A number of articles on Medium pointed to the atomic design system, something Brad Frost talks about in his book.
+		 					<div class="row inline-image">
+								<img class="image" data-action="zoom" src="http://atomicdesign.bradfrost.com/images/content/atomic-design-molecules.png" tabindex="0">
+								<p class="caption">Building blocks of an atomic design system</p>
+							</div>
 	 					</div>
 
-<!-- 						<h2>Android Permissions Workflow Rework</h2>
+						<h2>Grid system</h2>
+						<div class="about-desc">
+	 					Having a grid system allows us to specifically define how screens look across different device sizes. There's no point reinventing the wheel, I just borrowed bootstrap's grid system and adapted it to our margin values. 
+	 					<div class="row inline-image">
+							<img class="image" data-action="zoom" src="app/img/noom-grid.png" tabindex="0">
+							<p class="caption">How the grid looks across multiple screen sizes</p>
+						</div>
+	 					</div>
+
+						<h2>Input selectors</h2>
+						<div class="about-desc">
+	 						How the different input selectors would look given the conditions allows us to dictate the system.
+	 					<div class="row inline-image">
+							<img class="image shadow" data-action="zoom" src="app/img/noom-input.png" tabindex="0">
+							<p class="caption">Input selector behaviour patterns</p>
+						</div>
+	 					</div>
+
+						<h2>How it's all applied</h2>
+						<div class="about-desc">
+	 						A number of redlined examples are included in the style guide to show how it's actually applied given the overarching information architecture. We don't actually redline designs for actual design to development hand-off, since Zeplin does it 100 times more efficiently.
+
+	 					<div class="row inline-image">
+							<img class="image shadow" data-action="zoom" width="300"src="app/img/noom-redlines.png" tabindex="0">
+							<p class="caption">Redlines applied to a health article page for demonstration</p>
+						</div>
+	 					</div>
+
+						<div class="about-desc">
+	 					A lot of these components were common elements that have been used in different parts of the app and web flow previously. But since the projects were handled by different designers across multiple sprints, there were a lot of discrepancies between the behaviour and appearance of these components. <br><br>
+
+	 					The biggest challenge I faced while designing the style guide was trying to keep the visuals in accordance with the brand, while consolidating all the different behaviours and states. 
+	 					</div>
+
+						<h2>Collaboration with engineering and design</h2>
+						<div class="about-desc">
+							A lot of the work that went into this was me Slacking people asking, "Hey X interaction does the same thing as Y interaction - what's the rationale for having two separate patterns?" 
+							<br><br>
+							I would check in with our mobile engineers regularly when creating new interactions on whether an existing interaction pattern could be reused. 
+							<br><br>
+							During our weekly design reviews I would report on the progress - engineers and designers would then pitch in to see whether the interactions I've documented or consolidated actually makes sense for the function they were prescribed to do. 
+						</div>
+
+<!-- 						<h1 class="title">Android Permissions Workflow Rework</h1>
 						<div class="about-desc">
 						Drastic UX improvements were made to the Android permission workflow to create a more holistic experience for our users. 
 						</div>
@@ -128,7 +163,27 @@
 							<p class="caption">Chart showing when permissions should be requested from the design's POV.</p>
 						</div><br> -->
 
-						<h2>Vector assets</h2>
+						<h1 class="title">Final Outcome</h1>
+						<div class="about-desc">
+							The design system style guide was distributed in two ways - we had a printable version pinned up with all our interaction flows. Each of the specific components and interactions were created as ready-to-use (and interactive) modules using React and placed in our internal development wiki at Noom. 
+							<div class="row inline-image">
+								<img class="image shadow" data-action="zoom" src="app/img/style-guide-full.png" tabindex="0">
+								<p class="caption">Printable version</p>
+							</div>
+						</div>
+
+						<h1 class="title">Takeaways</h1>
+						<h2>Designing from a system will save design and development efforts</h2>
+						<div class="about-desc">
+							Having a design system makes a huge difference in consolidating the overall experiences. Especially true for fleshing out new design features - having a design system linked to a React library for example will save tons of time.
+						</div>
+
+						<h2>Designing from a system leads to a better end user experience</h2>
+						<div class="about-desc">
+							Over the years, the main app had been worked on by half a dozen designers. One of the things we noted were the discrepancies within the app, and how inconsistent some design patterns were. Taking the time to establish the design system allowed me to compare the documented interactions against the interactions on the live app, allowing teams to make the correct iterations quickly.
+						</div>
+
+<!-- 						<h2>Vector assets</h2>
 						<div class="about-desc">
 						Would it be feasible if we got rid of every single PNG in the app and replaced them with SVGs? What started as an ambitious experiment became a reality.
 						<br>
@@ -140,7 +195,7 @@
 							<ul class="nav-list social-media tag">
 								<a href="https://medium.com/@javan.z.wang/best-practices-for-creating-and-exporting-vector-assets-in-sketch-a84df7f7c11f" target="_blank"><li><i class="fa fa-medium"></i>   Learn more about this on Medium</li></a>
 							</ul>
-						</div>
+						</div> -->
 
 					</div>
 				</div>
