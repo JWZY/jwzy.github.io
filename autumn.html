@@ -56,12 +56,12 @@
 				<div class="page-header col-md-6 flex text-left">
 					<div>
 						<div class="row inline-image">
-							<img class="image left-align" src="https://roadmunk.com/images/features/features-ideas2.png" tabindex="0">
+							<img class="image left-align shadow" src="https://roadmunk.com/images/features/features-ideas2.png" tabindex="0">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row hero" style="background-image: linear-gradient(141deg, #007AE5 0%, #007AE5 75%);">
+			<div class="row hero" style="background-image: linear-gradient(141deg, #007AE5 0%, #004E97 75%);">
 				<div class="about-content row" style="color: white">
 					<!-- Metadata Banner-->
 					<div class="col-md-8 text-left">
@@ -98,87 +98,207 @@
 							The combination of these problems results in a life-time value of just 4 years for the average subscriber, and a lot of churn for the business. 
 							<br><br>
 							<div class="inline-image">
-								<img class="image" data-action="zoom" src="app/img/fim-diagram.png" tabindex="0">
-								<p class="caption">The user journey of a product manager before features make it onto a roadmap</p>
+								<img class="image" src="app/img/fim-diagram.png" tabindex="0">
+								<p class="caption">Customer feedback are collected, ideas are prioritized before they are promoted into features.</p>
 							</div>
 							<br><br>
-							The business hypothesis was the following - team was to introduce a new product area that will be tailored specifically towards the workflow of Product Managers, built upon a modern techstack. The solution will assist Product Managers in their day to day duties, increase stickiness, and reduce churn. This was named the "Feedback and Idea Management" project team, or "FIM" for short. 8 months after the project kickstarted, I joined the team. 
+							The business hypothesis was the following - introduce a new product area that will be tailored specifically towards the workflow of Product Managers, that's built upon a modern techstack. The solution will assist Product Managers in their day to day duties, increase stickiness, and reduce churn. This was named the "Feedback and Idea Management" project team, or "FIM" for short. 8 months after the project kickstarted, I joined the team. 
 						</div>
 
 						<h1 class="title">Problems Discovered from Research</h1>
 						<div class="about-desc">
-		 					One of the first things we did after joining the team was to conduct a series of 1 hour long user research sessions. The participants composed of both existing and prospective customers. The format included semi-structured interviews as well as usability testing sessions to evaluate both product-market fit, as well as the ease of use of the prototype. Up until this point, the product prototype had not been evaluated against live users. 
+		 					One of the first things we did after joining the team was to conduct a series of 1-hour user research sessions. The participants composed of both existing and prospective customers. The format included semi-structured interviews as well as usability testing sessions to evaluate both product-market fit, as well as the ease of use of the prototype. Up until this point, the product prototype had not been evaluated against live users. 
+	 					</div>
+							<br>
+							<div class="inline-image">
+								<img class="image shadow" src="app/img/ideas-before.png" tabindex="0">
+								<p class="caption">The prototype that was tested with existing and prospective users</p>
+							</div>
 							<br><br>
 							Here's what we learned,
 							<br><br>
-							<ul>
-								<li>The product is not in alignment with the existing user base's mental models.</li>
-								<li>The customizability of factors (colours, scale, type) was more confusing than useful for users.</li>
-								<li>Idea Prioritization as a module requires a lot of setup before value is realized.</li>
-								<li>Low discoverability across the board in favour of minimalist aesthetics, compromising ease of use.</li>
-							</ul>
-	 					</div>
+
+							<ol class="insights">
+								<!-- Insight #1 -->
+								<li class="insights">Actual experience ≠ user mental model</li>
+
+								<div class="about-desc">
+									<div class="row">
+										<div class="about-desc">
+											The values assigned to the factors also change depending which view the user is on. There is no source of truth across teams and factors.
+											<br><br>
+											In addition, product managers familiar with the RICE framework know that the RICE score is calculated as Reach x Impact x Confidence ÷ Effort. The way the score is calculated here doesn't follow said formula.
+										</div>
+									</div>
+											<div class="row inline-image">
+											<img class="image shadow" data-action="zoom" src="app/img/rice-scoring.png" tabindex="0">
+											</div>
+								</div>
+								<li class="insights">Factor customizability is confusing and detracts values</li>
+								<div class="about-desc">
+									<div class="row">
+										<div class="about-desc">
+											The custom factors were far too customizable in areas that provided little value - like being able to tweak the colour and shape of the rating factors. The preset factors also didn’t accurately correlate with the data they were supposed to represent.
+										</div>
+											<div class="row inline-image">
+											<img class="image shadow" width="400" data-action="zoom" src="app/img/custom-factor-before.png" tabindex="0">
+											</div>
+
+									</div>
+								</div>
+
+								<li class="insights">Idea Prioritization requires a lot of setup before value is realized</li>
+								<div class="about-desc">
+									<div class="row">
+										<div class="about-desc">
+											For a user to start finding value in the idea prioritization module, they need to...add the new ideas manually, customize the board to include the factors they need for the prioritization, then assign factor values for each idea individually.
+										</div>
+									</div>
+								</div>
+
+								<li class="insights">Connection between factors and score calculation is unclear</li>
+								<div class="about-desc">
+									<div class="row">
+										<div class="about-desc">
+											It is unclear to the users why certain factors are assigned the values they have. Why do 4 stars and 2 squares equal 67? 
+										</div>
+					 					<div class="row inline-image">
+											<img class="image shadow" data-action="zoom" width="500"src="app/img/factors-and-score.png" tabindex="0">
+										</div>
+									</div>
+								</div>
+
+								<li class="insights">Low discoverability and lack of signifiers</li>
+								<div class="about-desc">
+									<div class="row">
+										<div class="about-desc">
+											At a glance it is not clear on the page what elements are interactable, and what the different dropdowns represent. Users had trouble finding their way through the app, and what they expected the dropdowns and interactions to be often defied their expectations.
+										</div>
+										<div class="row inline-image">
+											<img class="image" width="600" data-action="zoom" src="app/img/ideas-dropdowns.png" tabindex="0">
+											<p class="caption">The functions of the dropdowns are unclear at a glance.</p>
+										</div>
+									</div>
+								</div>
+
+							</ol>
+
 
 						<h1 class="title">The Redesign</h1>
 						<h2>Goals</h2>
 						<div class="about-desc">
 							<ul>
-								<li>Align the designed solution with actual user expectations.</li>
-								<li>Surface affordances by providing appropriate signifiers.</li>
-								<li>Make the tool usable out of the box instead of requiring setup to realize value.</li>
+								<li>Align the designed solution with actual user mental models.</li>
+								<li>Surface affordances by providing appropriate signifiers to increase discoverability.</li>
+								<li>Make the Idea Prioritization module a tool that's usable out of the box instead of requiring setup to realize value.</li>
 							</ul>
-	 					</div>
-
-						<h2>Different options explored</h2>
-						<div class="about-desc">
-	 					I always design from a moodboard formed from a variety of different sources - competitive analysis for what's out there already, conventional interaction design patterns that users would be familiar with, and other adjacent experiences that may be applicable. In other words, a mishmash of different prototypes are often frankesteined together with the brand's visual skin applied is how I produce the prototypes.
 	 					</div>
 
 						<h2>Cut for time</h2>
 						<div class="about-desc">
-	 					Strict deadline to hit sales targets for the 2nd quarter of 2020, features needed to be cut from the MVP. Iterations post launch were needed to get them going
+	 					The project at this stage has been in development for over 8 months, the MVP scope needed to be trimmed due to business needs. The final deadline was set to be right before the start of 2020 Q2 so sales could hit their targets without missing oppportunities for two whole quarters. A large set of "essential" features had to be cut from scope. Iterations post launch were required to bring the product more inline with the customer needs.
+						<br><br>
+						A lot of trade offs had to be made to balance a solution that's sellable and usable, while maintaining velocity. 2 work weeks was all I had to redesign the entire module while balancing the need to satisfy both user as well as business goals. 
 	 					</div>
 
-						<h1 class="title">Iterations made post launch</h1>
+						<h2>Different options explored</h2>
 						<div class="about-desc">
-	• Quantitative feedback was managed by the PM assigned to the project to monitor usage - reduce barriers for adoption
-	• Custom scoring 
-Qualitative feedback was gathered through multiple forms - surveys from Chameleon as well as user research to gather testimonials on what needed to change to increase adoption - usability testing of new features. 
+	 					I always design from a moodboard formed from a variety of different sources - competitive analysis, conventional interaction design patterns that users would be familiar with, and other adjacent experiences that may be applicable. In other words, a mishmash of different prototypes are often "frankensteined" together when I design.
+	 					</div>
+
+							<div class="row">
+								<div class="col-md-6">
+								<div class="inline-image">
+								<img class="image" data-action="zoom" src="app/img/ideas-options1.png" tabindex="0">
+								<p class="caption">Competitive analysis of the boards and factors.</p>
+								</div>
+								</div>
+								<div class="col-md-6">
+									<div class="inline-image">
+									<img class="image" data-action="zoom" src="app/img/ideas-options.png" tabindex="0">
+									<p class="caption">Options explored for different ways of representing factors.</p>
+									</div>
+								</div>
+							</div>
+						<br><br>
+						<h2>What we ultimately launched</h2>
+						<div class="about-desc">
+	 						The final iteration below went through several rounds of internal stakeholder feedback, while taking into consideration the business goals and technical constraints. User feedback was also incorporated to land on the final iteration. The total redesign from research to launch were completed under 3 months.
+	 					</div>
+						<div class="row inline-image">
+							<img class="image" data-action="zoom" src="app/img/ideas-iterations.png" tabindex="0">
+							<p class="caption">Different iterations the page went through before landing on the final design</p>
 						</div>
+						<div class="row inline-image">
+							<img class="image shadow" data-action="zoom" src="app/img/ideas-after.png" tabindex="0">
+							<p class="caption">What we ultimately launch & what is live today.</p>
+						</div>
+
+
+						<h1 class="title">Continued Design and Development After Launch</h1>
+
+						<div class="about-desc">
+							A mix of quantitative and qualitative feedback was gathered to determine where to take the product area post-launch. Quantitative feedback was managed by the PM assigned to the project to monitor usage - we learned that the manual entry created barriers for adoption. 
+							<br><br>
+							Qualitative feedback was gathered through multiple forms - surveys from Chameleon as well as user research to gather testimonials on what needed to change to increase adoption. I ran a mix of moderated (Zoom & Figma) and unmoderated (using Maze.design) usability testing sessions to evaluate desirability and usability of new features.
+						</div>
+
+							<div class="row">
+								<div class="col-md-6">
+								<div class="inline-image">
+								<img class="image" data-action="zoom" src="https://lh6.googleusercontent.com/60peMlb3Zq52bttGe0Gwo-UBg28F5tio_bUsWMjaXmPgAEe7sxgK2IAzhuEqiOM9T1ex7fF9a6UhHkvX1DI2S4qw1sxFJJavOitRgMU7=s1600" tabindex="0">
+								<p class="caption">Moderated usability tests.</p>
+								</div>
+								</div>
+								<div class="col-md-6">
+									<div class="inline-image">
+									<img class="image" data-action="zoom" src="https://lh5.googleusercontent.com/fB9myO9ACS3sn-Gg7enyUQiRut_4kJqIB6WBja0LCDOo7H2IID7bGlUtc40Llgz-oktMPwX16KiIkiyZzlBuHM8ush7z-RjBA8bPIS8T=s1600" tabindex="0">
+									<p class="caption">Unmoderated tests done through Maze.design</p>
+									</div>
+								</div>
+							</div>
+							<br>
+							<ol class="insights">
+								<!-- Insight #1 -->
+								<li class="insights">Custom scoring</li>
+
+									<div class="row">
+										<div class="about-desc">
+											Only preset boards (RICE and Value vs Effort) had scores attached to them at the time of launch. The ability to support scoring on custom views was cut for scope before the MVP deadline. I worked with the product and engineering team to ship, test, and launch the custom scoring feature right after the launch of the MVP. I tested low-fidelity prototypes of the feature with 17 different users (mix of moderated and unmoderated tests) prior to handing off the designs to engineering — all of which were completed under 4 weeks.
+										</div>
+									</div>
+									<div class="row inline-image">
+										<img class="image shadow" data-action="zoom" src="https://support.roadmunk.com/hc/article_attachments/360076071614/IdeaFactor_customweight.gif" tabindex="0">
+									</div>
+
+								<li class="insights">Import ideas through CSV</li>
+									<div class="row">
+										<div class="about-desc">
+											From quantitative data we noticed a low usage and adoption rate for idea prioritization after the product area was launched. User research uncovered one of the reasons why there was low adoption rate - user data already lived elsewhere, and since manual entry was the only way to add the data into the system, the amount of effort required for migration wasn't worth the value added. WIP, assets to come.
+										</div>
+									</div>
+							</ol>
+
 
 						<h2>Collaboration with other teams</h2>
 						<div class="about-desc">
-							A lot of the work that went into this was me Slacking people asking, "Hey X interaction does the same thing as Y interaction - what's the rationale for having two separate patterns?" 
-							<br><br>
-							I would check in with our mobile engineers regularly when creating new interactions on whether an existing interaction pattern could be reused. In addition, I made sure to document all the redesigned interactions and where they're most appropriate in our internal development Wiki - so engineers could copy the snippets of the interaction patterns. 
-							<br><br>
-							During our weekly design reviews I would report on the progress - engineers and designers would then pitch in to see whether the interactions I've documented or consolidated actually makes sense for the function they were prescribed to do. PMs would occasional pitch in to make sure the interactions we are designing are applicable for the whitelabelled version of the app. 
-						</div>
-
-						<h1 class="title">Final Outcome</h1>
-						<div class="about-desc">
-<!-- 							The design system style guide was distributed in two ways - we had a printable version pinned up with all our interaction flows. Each of the specific components and interactions were created as ready-to-use (and interactive) modules using React and placed in our internal development wiki at Noom.  -->
+							WIP placeholder.
 						</div>
 
 						<h1 class="title">Takeaways</h1>
-						<h2>Designing from a system will save design and development efforts</h2>
+						<h2>Strong collaboration with product and engineering leads to focus and success</h2>
 						<div class="about-desc">
-							Use a mix of qualitative and quantitative evidence gathered through research to align stakeholders and build empathy for the user.
+							Despite the timeline challenges and problems the project faced, a lot focus was put into relationship building with both product and engineering to ensure our goals are aligned. Devs and PMs were involved whenever possible in usability testing calls to build empathy for the user.
 						</div>
 
-						<h2>Designing from a system leads to a better end user experience</h2>
+						<h2>Build and ship in increments, embrace bias to action</h2>
 						<div class="about-desc">
-							Strong focus on collaboration with PM and development leads to success - devs should be involved in these usability testing calls when permissible to build empathy.
-						</div>
-
-						<h2>Build small, launch quickly, design iteratively</h2>
-						<div class="about-desc">
-							Strong focus on collaboration with PM and development leads to success - devs should be involved in these usability testing calls when permissible to build empathy.
+							Scope is negotiable but the minimum amount of value the product needs to deliver to satisfy customer needs are not. One of the biggest 
 						</div>
 
 						<h2>Test early and often</h2>
 						<div class="about-desc">
-							Get insights early on while exploring different options to derisk presented solutions, be more confident and knowledgeable in one's approach.
+							Get insights early on while exploring different options to derisk presented solutions. This allows teams, not just designers to be more confident and knowledgeable. Removing ambiguity is key to shipping quickly. 
 						</div>
 
 <!-- 						<h2>Vector assets</h2>
