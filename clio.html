@@ -46,8 +46,8 @@
 				<div class="page-header col-md-6 text-left flex">
 					<div>
 						<h1 class="title">Clio App Ecosystem</h1>
-						<h1 class="subtitle">Leading the end-to-end design of Clio's apps ecosystem.</h1>
-						<div class="about-desc">Owned end to end design from research to implementation for several feature releases aimed to increase value for customers, increasing new user enablement rate by 400% across a 12 month period.</div>
+						<h1 class="subtitle">Leading the end-to-end research, design implementation, and product vision of Clio's app ecosystem.</h1>
+						<div class="about-desc">I designed and implemented several features that feed into an overarching product vision informed by research findings and strategic business needs. Outcome: new user enablement rate increased by 400% across a 12 month period.</div>
 						<div class="row inline-image">
 							<img width="300" class="image left-align" src="app/img/clio.svg" tabindex="0">
 						</div>
@@ -56,7 +56,7 @@
 				<div class="page-header col-md-6 flex text-left">
 					<div>
 						<div class="row inline-image">
-							<img class="image left-align shadow" src="https://roadmunk.com/images/features/features-ideas2.png" tabindex="0">
+							<img class="image left-align shadow" data-zoomable id="zoom-default" src="https://roadmunk.com/images/features/features-ideas2.png" tabindex="0">
 						</div>
 					</div>
 				</div>
@@ -64,20 +64,21 @@
  			<div class="row hero" style="background-image: linear-gradient(141deg, #0f478d 0%, #0f478d 75%);">
 				<div class="about-content row" style="color: white">
 				<!--Metadata Banner -->
-					<div class="col-md-8 text-left">
+					<div class="col-md-6 text-left">
 						<h2 class="h2-text">Role</h2>
+						<p>Design lead</p>
 						<p>Discovery research</p>
-						<p>Vision design</p>
+						<p>Design vision</p>
 						<p>Interaction design</p>
 						<p>Usability studies</p>
 					</div>
-					<div class="col-md-4 text-left">
+					<div class="col-md-6 text-left">
 						<h2 class="h2-text">Triad Peers</h2>
 						<p>Jonas Caruana (PM)</p>
 						<p>Andrew Pearse (DM)</p>
 						<br>
 						<h2 class="h2-text">Duration</h2>
-						<p>1 Year</p>
+						<p>Nov 2020 - Present</p>
 					</div>
 				</div>
  			</div>
@@ -88,25 +89,10 @@
 					<div class="about-content">
 						<h1 class="title">The Situation</h1>
 						<div class="about-desc">
-							Roadmunk is a high-growth startup whose bread and butter offering is a software solution that allows customers to easily and quickly create visually stunning roadmaps.
-							<br><br>
-		 					When I joined the project the organization was faced with three major problems with the core offering for roadmapping.
-							
-							<br><br>
+							Two types of users for the product area. As the design lead for the problem space, there were a number of criteria,
 							<ul>
-								<li>Roadmapping is a monthly if not seasonal ritual, resulting in low user stickiness</li>
-								<li>The tech stack upon which roadmapping is built is slow to ship and slow to use</li>
-								<li>No defined audience - when you design and build for everyone you design for no one</li>
-							</ul>
-							<br>
-							The combination of these problems results in a life-time value of just 4 years for the average subscriber, and a lot of customer churn for the business. To tackle these issues, a new product line was planned to be built to capture more PMs as customers, and allow existing customers to engage more periodically with the product (as opposed to only using Roadmunk on a monthly cadence).
-							<br><br>
-							<div class="inline-image">
-								<img class="image" src="app/img/fim-diagram.png" tabindex="0">
-								<p class="caption">Customer feedback are collected, ideas are prioritized before they are promoted into features.</p>
-							</div>
-							<br><br>
-							The new product area "Feedback and Idea Management" (or FIM for short) will be tailored specifically towards the workflow of Product Managers, that's built upon a modern techstack using React. By the time I joined the team the project had already ran for 8 months, with a fast approaching deadline. 
+								<li></li>
+							<ul>
 						</div>
 
 						<h1 class="title">Problems Discovered from Research</h1>
@@ -115,7 +101,7 @@
 	 					</div>
 							<br>
 							<div class="inline-image">
-								<img class="image shadow" src="app/img/ideas-before.png" tabindex="0">
+								<img class="image shadow" data-zoomable src="app/img/ideas-before.png" tabindex="0">
 								<p class="caption">The prototype that was tested with existing and prospective users</p>
 							</div>
 							<br><br>
@@ -245,7 +231,7 @@
 							<p class="caption">Different iterations the page went through before landing on the final design</p>
 						</div>
 						<div class="row inline-image">
-							<img class="image shadow" data-action="zoom" src="app/img/ideas-after.png" tabindex="0">
+							<img class="image shadow" src="app/img/ideas-after.png" tabindex="0">
 							<p class="caption">What we ultimately launch - this is what is live today.</p>
 						</div>
 
@@ -393,11 +379,15 @@
 		<script type="text/javascript" src="app/js/main.js" inline></script>
 
 		<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
 		<script>
-			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
-		</script>
-		<!-- <script src="app/js/animsition.min.js"></script> -->
+			mediumZoom(document.querySelectorAll('[data-zoomable]'),
+				{
+					margin: 24,
+					// background: '#BADA55',
+				})
+		</script> 
+		<script src="app/js/animsition.min.js"></script> 
 		<script>
 			$(function() {
 			    $('body').removeClass('fade-out');

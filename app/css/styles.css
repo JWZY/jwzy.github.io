@@ -180,10 +180,13 @@ header {
     width: 100%
 }
 
-.medium-zoom-image--open {
-    z-index: 999;
+.medium-zoom--opened .medium-zoom-overlay {
+    z-index: 101;
 }
 
+.medium-zoom-image--opened {
+    z-index: 102;
+}
 
 .floatingNav {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -554,6 +557,12 @@ main.about h1.title {
 h1.title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700
+}
+
+h1.title a {
+    color: #47b9c5;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 h1.title.hl-highlight {
