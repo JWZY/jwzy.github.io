@@ -87,237 +87,55 @@
 			<div class="page-content">
 				<div class="row">
 					<div class="about-content">
-						<h1 class="title">The Situation</h1>
+						<h1 class="title">Background</h1>
 						<div class="about-desc">
-							Two types of users for the product area. As the design lead for the problem space, there were a number of criteria,
-							<ul>
-								<li></li>
-							<ul>
+							App ecosystem is a problem space that has two primary user types, the developer who creates app solutions for the platform, and the legal professional who finds app solutions to address their business needs.
+						</div>
+						<div class="inline-image">
+							<img class="image" data-zoomable src="app/img/clio-ecosystem-users.png" tabindex="0">
 						</div>
 
-						<h1 class="title">Problems Discovered from Research</h1>
+						<h1 class="title">Leading with Research</h1>
 						<div class="about-desc">
-		 					One of the first things we did after joining the team was to conduct a series of 1-hour user research sessions. The participants composed of both existing and prospective customers. The format included semi-structured interviews as well as usability testing sessions to evaluate both product-market fit, as well as the ease of use of the prototype. Up until this point, the product prototype had not been evaluated against live users. 
-	 					</div>
+							When I first joined the product area, there's a lack of foundational research into the existing customer experience and pain points. Shortly after joining, I launched a study to uncover foundational insights that will help the customer journey.
+						</div>
+						<div class="inline-image">
+							<img class="image shadow" data-zoomable src="app/img/clio-customer-research-1.png" tabindex="0">
+							<p class="caption">The Clio App Ecosystem customer journey informed from the research findings.</p>
 							<br>
-							<div class="inline-image">
-								<img class="image shadow" data-zoomable src="app/img/ideas-before.png" tabindex="0">
-								<p class="caption">The prototype that was tested with existing and prospective users</p>
-							</div>
-							<br><br>
-							Here's what we learned,
-							<br><br>
-
-							<ol class="insights">
-								<!-- Insight #1 -->
-								<li class="insights">Actual experience ≠ user mental model</li>
-								<!-- Uncovered the workflow did not resonate with how the PMs are used to working. For example, the canvas experience -->
-								<div class="about-desc">
-									<div class="row">
-										<div class="about-desc">
-											From research, we uncovered that the presented workflow on the board did not resonate with how the PMs are used to working. For example, the canvas experience behaved different from user expectations - product managers familiar with the RICE prioritization framework know that the RICE score is calculated as Reach x Impact x Confidence ÷ Effort. The way the score is calculated on the canvas doesn't follow said formula.
-										</div>
-									</div>
-											<div class="row inline-image">
-											<img class="image shadow" data-action="zoom" src="app/img/rice-scoring.png" tabindex="0">
-											<p class="caption">The canvas values here imply 0 x 0 x 0 ÷ 0 = 50</p>
-											</div>
-								</div>
-
-								<li class="insights">Connection between factors and score calculation is unclear</li>
-								<!-- No idea  -->
-								<div class="about-desc">
-									<div class="row">
-										<div class="about-desc">
-											It is unclear to the users why certain factors are assigned the values they have, and how the shapes, and colours of the values contribute to the given scores. Why do 4 stars and 2 squares equal 67? 
-										</div>
-					 					<div class="row inline-image">
-											<img class="image shadow" data-action="zoom" width="500"src="app/img/factors-and-score.png" tabindex="0">
-										</div>
-									</div>
-								</div>
-
-								<li class="insights">Certain features added friction while contributing little value</li>
-								<div class="about-desc">
-									<div class="row">
-										<div class="about-desc">
-											What we discovered from research was that investment was made towards certain features that were low desirability and usefulness that added friction to the workflow. The value proposition for FIM was to allow PMs to quickly prioritize and quantify different idea. 
-											<br><br>
-											For example, the factors (page values) were far too customizable - users must select the colour and shape of the rating factors before using them. The default colour and shapes of many factors also didn’t accurately correlate with the data they were supposed to represent.
-										</div>
-											<div class="row inline-image">
-											<img class="image shadow" width="400" data-action="zoom" src="app/img/custom-factor-before.png" tabindex="0">
-											</div>
-
-									</div>
-								</div>
-
-								<li class="insights">The setup for Idea Prioritization is complex and hidden</li>
-								<div class="about-desc">
-									<div class="row">
-										<div class="about-desc">
-											The pre-existing feature prioritization workflow required a lot of set up that were hidden and hard to find. For a user to start finding value in the idea prioritization module, they need to...add product areas, add components, add the new ideas manually, customize the board to include the factors they need for the prioritization, then assign factor values for each idea individually.
-										</div>
-									</div>
-								</div>
-
-								<li class="insights">Low discoverability and unclear signifiers</li>
-								<div class="about-desc">
-									<!-- For example "X", title. -->
-									<div class="row"> 
-										<div class="about-desc">
-											At a glance it is not clear on the page what elements are interactable, and what the different dropdowns represent. Users had trouble finding their way through the app, and what they expected the dropdowns and interactions to be often defied their expectations.
-										</div>
-										<div class="row inline-image">
-											<img class="image" width="600" data-action="zoom" src="app/img/ideas-dropdowns.png" tabindex="0">
-											<p class="caption">The functions of the dropdowns are unclear at a glance.</p>
-										</div>
-									</div>
-								</div>
-							</ol>
-
-						<h1 class="title">The Proposed Solution</h1>
-						<h2>Goals</h2>
-						<div class="about-desc">
-							<ul>
-								<li>Align the designed solution with actual user mental models to improve product-market fit.</li>
-								<li>Surface affordances by providing appropriate signifiers to increase discoverability.</li>
-								<li>Minimize CS efforts for teaching and onboarding in favour for a self-sufficient experience for users</li>
-								<li>Make it a tool that's usable out of the box instead of requiring a lot of setup to realize value.</li>
-								<li>Worked with PM to arrive at the right metrics to define success.</li>
-							</ul>
-	 					</div>
-
-	 					<!-- Constraints -->
-	 					<!-- Limitations with BluePrint -->
-	 					<!-- Morale was a huge issue, rapport -->
-	 					<!-- Pre-built functionality -->
-
-						<h2>Constraints and Challenges</h2>
-						<div class="about-desc">
-							<ul>
-								<li>The UI toolkit chosen (blueprint.js) was limited in its customizability, so interaction compromises had to be made.</li>
-								<li>Long project runtime with a lot of crunch - development morale was a major issue.</li>
-								<li>Large sets of features had to be cut from scope to accommodate the deadline for launch before the start of Q2.</li>
-							</ul>
-	 					</div>
-
-						<h2>Different options explored</h2>
-						<div class="about-desc">
-	 					I always design from a moodboard formed from a variety of different sources - competitive analysis, conventional interaction design patterns that users would be familiar with, and other adjacent experiences that may be applicable. In other words, a mishmash of different prototypes are often "frankensteined" together when I design.
-	 					</div>
-
-							<div class="row">
-								<div class="col-md-6">
-								<div class="inline-image">
-								<img class="image" data-action="zoom" src="app/img/ideas-options1.png" tabindex="0">
-								<p class="caption">Competitive analysis of the boards and factors.</p>
-								</div>
-								</div>
-								<div class="col-md-6">
-									<div class="inline-image">
-									<img class="image" data-action="zoom" src="app/img/ideas-options.png" tabindex="0">
-									<p class="caption">Options explored for different ways of representing factors.</p>
-									</div>
-								</div>
-							</div>
-						<br><br>
-						<h2>What we ultimately launched</h2>
-						<div class="about-desc">
-	 						The final iteration below went through several rounds of internal stakeholder feedback, while taking into consideration the business goals and technical constraints. User feedback was also incorporated to land on the final iteration. The total iteration from research to design to launch were completed under 3 months.
-	 					</div>
-						<div class="row inline-image">
-							<img class="image" data-action="zoom" src="app/img/ideas-iterations.png" tabindex="0">
-							<p class="caption">Different iterations the page went through before landing on the final design</p>
-						</div>
-						<div class="row inline-image">
-							<img class="image shadow" src="app/img/ideas-after.png" tabindex="0">
-							<p class="caption">What we ultimately launch - this is what is live today.</p>
-						</div>
-
-						<h1 class="title">Collaboration with other teams</h1>
-						<div class="about-desc">
-							Morale amongst the engineers was definitely a challenge when I joined the project. The project had been running on a crunch schedule for 2 months at this point, with most of the features already BUILT out. On the verge of engineering burn out, a new design team came and introduced a lot of evidence indicating problems with the existing build. The teams were also split across two separate offices, with the developers in Kitchener-Waterloo and all the designers in Toronto — the remote working conditions were less conducive to organic collaboration.
-							<br><br>
-							The atmosphere was visibly tense when the design team suggested changes to the existing build given all the work that has already been put in. There was initial reluctance to collaborate and communicate between the teams. I had to navigate the situation carefully and try my best to bridge the collaboration and communication gap through a couple of different strategies.
-						</div>
-						<h2>Evoke empathy for the user pains to align on purpose</h2>
-						<div class="about-desc">
-							I started involving influential members of the development team to join me on user calls to evoke a shared sense of the empathy. The perception within engineering up until this point felt as if design & product overlords were arbitrarily ordering the engineers around to do their bidding. These calls aligned us on the core goal of the project - which is to deliver a better experience for the end users. By involving development directly in understanding customer frustrations, it became much easier to influence development ICs on design decisions. 
-							<br><br>
-							<div class="inline-image">
-							<img class="image" data-action="zoom" src="app/img/andrea.png" tabindex="0">
-							<p class="caption">Taking prototype testing calls together with both PMs and devs</p>
-							</div>
-						</div>
-
-						<h2>"Asset sheet" to speed up collaboration</h2>
-						<div class="about-desc">
-							Due to the timeline, it wasn't possible to introduce a full design system into the project. I created a master asset sheet in Figma that as a "stop-gap" DS. This asset sheet documents transitions, states, and interactions of common components to increase consistency between pages.
-							<br><br>
-							<div class="inline-image">
-								<img class="image shadow" data-action="zoom" src="app/img/mastersheet.png" tabindex="0">
-							</div>
-							<br><br>
-							The asset sheet did a lot to bridge communication and collaboration gaps, the effort did not go unnoticed by members of the development team. 
-							<br><br>
-							<div class="inline-image">
-								<img class="image rounded" width="700" src="app/img/laura-testimony.png" tabindex="0">
-							</div>
-						</div>
-
-						<h1 class="title">Iterations After Launch</h1>
-						<div class="about-desc">
-							As a business we decided to constraint the amount of options people have access to at launch to create opportunities for monetization. 2 default boards and 5 factors were available at launch. We want to get a sense of how many boards were created and how many factors were made and iterate from there. 
-							<br><br>
-							A mix of quantitative and qualitative feedback was gathered to determine where to take the product area post-launch. Quantitative feedback was managed by the PM assigned to the project to monitor activity. 
-							<br><br>
-							Qualitative feedback was gathered through multiple forms - surveys from Chameleon as well as user research to gather testimonials on what needed to change to increase adoption. I ran a mix of moderated (Zoom & Figma) and unmoderated (using Maze.design) usability testing sessions to evaluate desirability and usability of the new features.
-						</div>
-
-							<div class="row">
-								<div class="col-md-6">
-								<div class="inline-image">
-								<img class="image" data-action="zoom" src="https://i.imgur.com/soFly48.png" tabindex="0">
-								<p class="caption">Moderated usability tests.</p>
-								</div>
-								</div>
-								<div class="col-md-6">
-									<div class="inline-image">
-									<img class="image" data-action="zoom" src="https://i.imgur.com/vlTjff6.png" tabindex="0">
-									<p class="caption">Unmoderated tests done through Maze.design</p>
-									</div>
-								</div>
-							</div>
+							<img class="image shadow" data-zoomable src="app/img/clio-customer-research-2.png" tabindex="0">
+							<p class="caption">The research objectives for the study.</p>
 							<br>
-							<ol class="insights">
-								<!-- Insight #1 -->
-								<li class="insights">Custom scoring</li>
-										<div class="about-desc">
-											Only preset boards (RICE and Value vs Effort) had scores attached to them at the time of launch. Custom scoring was something we decided must be worked on post-launch after receiving feedback from a combination of different sources - Chameleon feedback forms, in-app user feedback, customer success calls, to arrive at the solution. 
-											<br><br>
-											I worked with the product and engineering team to ship, test, and launch the custom scoring. After a rigorous problem definition and competitive analysis phase, I tested low-fidelity prototypes of the feature with 17 different users (mix of moderated and unmoderated tests) prior to marking the designs as ready for development. From project kick-off to implementation ready, this was achieved under 6 weeks.
-											<br><br>
-											<video playsinline muted autoplay loop controls>
-												<source src="app/img/customweight.webm" type="video/webm">
-											</video>
-										</div>
-										<br><br>
+							<img class="image shadow" data-zoomable src="app/img/clio-customer-research-3.png" tabindex="0">
+							<p class="caption">One of the many findings that help inform our foundational understanding of how customers interact with the app ecosystem today.</p>
+						</div>
 
-								<li class="insights">Import ideas through CSV</li>
-									<div class="row">
-										<div class="about-desc">
-											From quantitative data we noticed a low usage and adoption rate for idea prioritization after the product area was launched. User research uncovered one of the reasons why there was low adoption rate - user data already lived elsewhere, and since manual entry was the only way to add the data into the system, the amount of effort required for migration wasn't worth the value added.
-											<br><br>
-											<video playsinline muted autoplay loop controls>
-												<source src="app/img/importcsv.mp4" type="video/mp4">
-											</video>
-										</div>
-									</div>
-							</ol>
-							
-						<br><br>
+						<h1 class="title">Outcomes from Research Recommendations</h1>
+						<div class="about-desc">
+							From the research our team identified key product gaps around discoverability, security, and privacy of apps for customers. I presented findings to my triad as well as the larger product org, and provided recommendations for how we can address these gaps. So one of the first projects that followed would allow users to search for apps by keyword without leaving Clio. A follow up project further increased awareness by highlighting the most commonly used apps in the app store
+						</div>
 
+						<h1 class="title">Helping Developer Succeed</h1>
+						<div class="about-desc">
+							As we completed these projects, similar gaps had been identified with how developers have been interacting with Clio as well. A short study with 10 app partners helped uncover major pain points they've been having during the build phase.<br>
+
+							A partner portal where developers can view analytics related to their app, manage app configurations, and listings. 
+						</div>
+
+						<h1 class="title">Accessible by Design</h1>
+						<div class="about-desc">
+							All of the feature releases were shipped with customer accessibility in mind from the get-go, instead of applying accessibility as an afterthought. All of the components are designed with keyboard navigation, strong colour contrast, and screen reader compatibility in mind.
+						</div>
+
+						<h1 class="title">Measurable Outcomes</h1>
+						<div class="about-desc">
+							Graph of Looker here.
+						</div>
+						<br>
+						<h1 class="title">Shipping Towards a Product Vision</h1>
+						<div class="about-desc">
+							The projects were delivered with high quality and due to close collaboration between members of the triad, Design, PM, and DM, as well as being close to developers during the implementation phase. 
+						</div>
 
 						<h1 class="title">Reflection on the Project</h1>
 						<h2>Strong collaboration with product and engineering leads to focus and success</h2>
@@ -325,25 +143,6 @@
 							Despite the tight timeline, and morale challenges the project faced, a lot focus was put into relationship building with both product and engineering. The best way I've found to do this was to build trust through honesty and collaboration through aligning on the same goals - which is to deliver value to customers. I involved engineers and PMs whenever possible in usability testing calls to evoke that empathy for the user.
 						</div>
 
-						<h2>Build and ship in increments, embrace bias to action</h2>
-						<div class="about-desc">
-							Scope is negotiable but the minimum amount of value the product needs to deliver to satisfy customer needs are not. One of the biggest takeaways is to test early and often, and get feedback from both internal and external stakeholders.
-							<br><br>
-							Getting insights early while exploring different options allows one to derisk solutions. This allows teams, not just designers to be more confident and knowledgeable. Removing ambiguity is key to shipping quickly and successfully. 
-						</div>
-
-
-						<h2>Include both business and behavioural metrics</h2>
-						<div class="about-desc">
-							A frustrated user might still pay for the app - it doesn't mean certain features have a good workflow. A feature that's well optimized for usability and frequently used may not generate the most revenue for sales. A mix of both metrics would be useful to get a better sense of what's working and what isn't. 
-							<br><br>
-							In retrospect, there was a plethora of business oriented metrics across the app focused on measuring churn, but since churn and ARR retention is a lagging indicator it's hard to track performance and usability quantitatively and precisely this way.
-						</div>
-
-						<h2>Usability studies don't always hold the answers</h2>
-						<div class="about-desc">
-							Throughout the case study I've spoken at length about how valuable user research has been for increasing the level of confidence for product and design. However, overindexing on the feedback of a few users could lead one down the wrong path of solutioneering. A second opinion is vital when discussing findings to see where the true problems lie - important to ask if there is a problem at all. 
-						</div>
 					<div class="text-center"><h1 class="title"><a class= "underline" href="chiron">Next project: Chiron</a></h1></div>
 					<br><br>
 					</div>

@@ -562,7 +562,7 @@ h1.title {
 h1.title a {
     color: #47b9c5;
     font-weight: 700;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 h1.title.hl-highlight {
@@ -768,13 +768,17 @@ p.author {
     text-align: left;
     line-height: 2em;
     padding-bottom: 3em;
-    margin: auto
+    margin: auto;
+    max-width: 860px
 }
 
 .about-content {
     flex: 1;
     margin: auto;
     max-width: 860px
+}
+.about-content img.wide {
+    max-width: 1366px;
 }
 
 .about-desc li {
