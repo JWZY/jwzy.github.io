@@ -273,13 +273,16 @@ a {
 a.underline {
     font-size: 1em;
     font-weight: 700;
-    color: black;
-    border-bottom: 2px solid #47b9c5;
-    padding-bottom: 2px;
+    color: #47b9c5;
+    text-decoration: underline;
+    padding: 3px;
 }
 a.underline:hover {
     font-size: 1em;
-    color: #47b9c5;
+    color: white;
+    background-color: #47b9c5;
+    border-radius: 3px;
+    transition: 0.5s;
 }
 
 b {
@@ -562,7 +565,7 @@ h1.title {
 h1.title a {
     color: #47b9c5;
     font-weight: 700;
-    /*text-decoration: underline;*/
+    text-decoration: underline;
 }
 
 h1.title.hl-highlight {
@@ -620,7 +623,7 @@ span.hl-highlight {
     color: #666;
     border: 2px solid rgba(0,0,0,.1);
     margin: 1em 0.7em 0.1em 0em;
-    text-transform: capitalize;
+/*    text-transform: capitalize;*/
     font-weight: 400;
     padding: .5em 1em .5em
 }
@@ -1008,6 +1011,9 @@ i.fa {
     .tab-nav {
         display: flex;
         justify-content: center;
+    }
+    .tab-nav.left {
+        justify-content: left;
     }
     main.project .tab-nav {
         justify-content: left;
