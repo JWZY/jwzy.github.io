@@ -241,11 +241,15 @@
 		<script type="text/javascript" src="app/js/main.js" inline></script>
 
 		<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
 		<script>
-			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
-		</script>
-		<!-- <script src="app/js/animsition.min.js"></script> -->
+			mediumZoom(document.querySelectorAll('[data-zoomable]'),
+				{
+					margin: 24,
+					// background: '#BADA55',
+				})
+		</script> 
+		<script src="app/js/animsition.min.js"></script> 
 		<script>
 			$(function() {
 			    $('body').removeClass('fade-out');

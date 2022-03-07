@@ -61,6 +61,24 @@
 			<!-- Project 1 -->
 			<div class="row">
 				<div class="project-wrapper">
+					<a href="clio">
+						<img class="image" src="app/img/clio-index-hero.png" alt="clio">
+					</a>
+				</div>
+				<div class="project-wrapper">
+					<div class="text-wrapper">
+						<a href="chiron">
+							<h1 class="subheader-text">App Ecosystem</h1>
+							<h2 class="h2-text">Clio</h2>
+							<h3 class="header-text">Leading the end-to-end research, design implementation, and product vision of Clio's App Ecosystem.</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Project 1 -->
+			<div class="row">
+				<div class="project-wrapper">
 					<a href="roadmunk">
 						<img class="image" src="app/img/idea-mock.png" alt="idea">
 					</a>
@@ -131,7 +149,7 @@
 				</div>
 			</div>
 
-			<!-- Project 4 -->
+			<!-- Project 4
 			<div class="row">
 				<div class="project-wrapper">
 					<a href="uken">
@@ -147,7 +165,7 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<!-- Project 5 -->
 			<div class="row">
@@ -196,11 +214,15 @@
 		<script type="text/javascript" src="app/js/main.js" inline></script>
 
 		<script src="https://kit.fontawesome.com/f4bc725e6f.js" crossorigin="anonymous"></script>
-		<script src="https://unpkg.com/medium-zoom@0/dist/medium-zoom.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script>
 		<script>
-			mediumZoom(document.querySelectorAll('[data-action="zoom"]'))
-		</script>
-		<!-- <script src="app/js/animsition.min.js"></script> -->
+			mediumZoom(document.querySelectorAll('[data-zoomable]'),
+				{
+					margin: 24,
+					// background: '#BADA55',
+				})
+		</script> 
+		<script src="app/js/animsition.min.js"></script> 
 		<script>
 			$(function() {
 			    $('body').removeClass('fade-out');
