@@ -5,6 +5,7 @@ import Link from "next/link";
 const placeholderImage = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjQwMCIgeT0iMzAwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMzIiIGZpbGw9IiM5Y2EzYWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIj5JbWFnZSBQbGFjZWhvbGRlcjwvdGV4dD48L3N2Zz4=';
 
 export default function Home() {
+  // Project data is kept but not displayed
   const projects = [
     {
       id: 'chiron',
@@ -59,7 +60,16 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Projects Grid */}
+      {/* Coming Soon Message */}
+      <div className="mt-16 text-center p-8 bg-gray-50 rounded-lg">
+        <h2 className="text-2xl font-bold mb-4">Projects Coming Soon</h2>
+        <p className="text-gray-700">
+          I'm currently updating my portfolio with new projects. Check back soon to see my work!
+        </p>
+      </div>
+
+      {/* Projects Grid - Hidden for now */}
+      {/* 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <Link href={project.link} key={project.id} className="group">
@@ -78,6 +88,7 @@ export default function Home() {
           </Link>
         ))}
       </div>
+      */}
     </div>
   );
 }
