@@ -10,4 +10,4 @@ cp -r out/* ../
 cd ..
 git add .
 git commit -m "Deploy Next.js site"
-git push origin master 
+git push origin main 
