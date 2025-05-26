@@ -102,6 +102,7 @@ const itemsSample: BentoItem[] = [
     meta: "15+ screens",
     tags: ["Design System", "Mobile"],
     href: "https://www.noom.com",
+    customClassName: "hidden",
   },
   {
     title: "$4 Physics Education Kit",
@@ -121,6 +122,7 @@ const itemsSample: BentoItem[] = [
     status: "Research",
     tags: ["Mixed Reality", "Film"],
     href: "https://www.microsoft.com/en-us/hololens",
+    customClassName: "hidden",
   },
   {
     title: "Mobile RPG User Experience",
@@ -131,6 +133,7 @@ const itemsSample: BentoItem[] = [
     status: "Alpha Test",
     tags: ["Gaming", "Mobile", "UX Research"],
     href: "https://uken.com",
+    customClassName: "hidden",
   },
   {
     title: "Playground Projects",
@@ -150,7 +153,7 @@ const itemsSample: BentoItem[] = [
     meta: "Social",
     tags: ["LinkedIn", "GitHub", "Email"],
     href: "https://www.linkedin.com/in/javanwang/",
-    customClassName: "md:hidden",
+    customClassName: "mobile-only",
   },
 ]
 

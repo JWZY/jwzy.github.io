@@ -10,6 +10,16 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .mobile-only {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-only {
+      display: none !important;
+    }
+  }
 }
 
 @layer base {
