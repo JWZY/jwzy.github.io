@@ -40,29 +40,29 @@ const itemsSample: BentoItem[] = [
   {
     title: "Connect & Follow",
     description: "Find me on social platforms, view my code, or get in touch for collaboration opportunities.",
-    icon: <Linkedin className="w-4 h-4 text-cyan-300" />,
+    icon: <Linkedin className="w-4 h-4 text-rose-400" />,
     meta: "Social",
     tags: ["LinkedIn", "GitHub", "Email"],
     href: "https://www.linkedin.com/in/javanwang/",
     customClassName: "hidden md:block",
-    gradientVariant: 'warm',
+    gradientVariant: 'accent',
   },
   
   // Priority 2: Current Work (Shopify)
   {
-    title: "Shopify Collective",
+    title: "Collective",
     description: "Supplier discovery through enhanced search experience that streamlines retailer-supplier connections.",
-    icon: <Search className="w-4 h-4 text-rose-400" />,
+    icon: <Search className="w-4 h-4 text-cyan-300" />,
     status: "Current",
     colSpan: 2,
     tags: ["B2B", "Search", "Discovery"],
     href: "https://www.shopify.com/collective",
-    gradientVariant: 'accent',
+    gradientVariant: 'warm',
   },
 
   {
-    title: "Shopify x TikTok Checkout Integration",
-    meta: "Shopify",
+    title: "TikTok Checkout Integration",
+    // meta: "Shopify",
     description: "Launched in-app checkout experience that eliminates transaction fees and maximizes merchant ROI with seamless Shop Pay integration.",
     icon: <ShoppingCart className="w-4 h-4 text-amber-400" />,
     status: "Beta release",
@@ -78,44 +78,14 @@ const itemsSample: BentoItem[] = [
     meta: "12 months",
     description:
       "Led research and design to transform app discovery and reduce customer acquisition friction for Canada's leading legal software platform.",
-    icon: <Briefcase className="w-4 h-4 text-amber-400" />,
+    icon: <Briefcase className="w-4 h-4 text-rose-400" />,
     // status: "Featured",
     tags: ["B2B SaaS", "Research", "Growth"],
     colSpan: 1,
     href: "https://www.clio.com/partnerships/developers/",
-    gradientVariant: 'cool',
+    gradientVariant: 'accent',
   },
-  // {
-  //   title: "Rescued Failing Product Launch",
-  //   meta: "8 months",
-  //   description: "Transformed confusing prioritization workflow into intuitive PM tool by conducting usability research and eliminating friction points.",
-  //   icon: <Lightbulb className="w-4 h-4 text-red-400" />,
-  //   status: "Success",
-  //   tags: ["Product Management", "UX Research"],
-  //   href: "https://roadmunk.com",
-  //   gradientVariant: 'warm',
-  // },
 
-  // Priority 4: Technical/Partnership Work
-  // {
-  //   title: "AI-Powered Windows Feature",
-  //   description: "19-week Intel partnership creating personalized virtual workspace that automatically organizes applications and files.",
-  //   icon: <Eye className="w-4 h-4 text-indigo-400" />,
-  //   status: "Partnership",
-  //   tags: ["AI", "Windows", "Intel"],
-  //   href: "https://www.intel.com",
-  //   gradientVariant: 'primary',
-  // },
-  // {
-  //   title: "Accelerated Development by 60%",
-  //   description: "Created atomic design system and React component library for 15+ screen sizes, enabling rapid B2B healthcare deployment.",
-  //   icon: <Smartphone className="w-4 h-4 text-teal-400" />,
-  //   meta: "15+ screens",
-  //   tags: ["Design System", "Mobile"],
-  //   href: "https://www.noom.com",
-  //   customClassName: "hidden",
-  //   gradientVariant: 'cool',
-  // },
   {
     title: "$4 Physics Education Kit",
     description: "10-week Microsoft partnership creating trebuchet kit with Arduino sensors and P5.js visualization for 4th grade classrooms.",
@@ -126,39 +96,15 @@ const itemsSample: BentoItem[] = [
     gradientVariant: 'primary',
   },
 
-  // Priority 5: Research & Creative
-  {
-    title: "HoloLens Film Industry Research",
-    meta: "5 months",
-    description: "Led ethnographic research with major motion picture experts, identifying 3 market-ready opportunities for Mixed Reality.",
-    icon: <Eye className="w-4 h-4 text-sky-400" />,
-    status: "Research",
-    tags: ["Mixed Reality", "Film"],
-    href: "https://www.microsoft.com/en-us/hololens",
-    customClassName: "hidden",
-    gradientVariant: 'cool',
-  },
-  {
-    title: "Mobile RPG User Experience",
-    meta: "40+ players",
-    description:
-      "Designed core game systems and conducted longitudinal diary studies with 171 feedback entries, balancing player satisfaction with technical constraints.",
-    icon: <Gamepad2 className="w-4 h-4 text-violet-400" />,
-    status: "Alpha Test",
-    tags: ["Gaming", "Mobile", "UX Research"],
-    href: "https://uken.com",
-    customClassName: "hidden",
-    gradientVariant: 'accent',
-  },
   {
     title: "Playground Projects",
     meta: "Side Projects",
     description: "Experimental designs, creative coding projects, and fun explorations outside of client and professional work.",
-    icon: <Palette className="w-4 h-4 text-cyan-400" />,
+    icon: <Palette className="w-4 h-4 text-rose-400" />,
     // status: "Creative",
     tags: ["Experiments", "Creative", "Fun"],
     href: "/playground",
-    gradientVariant: 'warm',
+    gradientVariant: 'accent',
   },
   
   // Social Links - Mobile Version (hidden on desktop)
@@ -179,7 +125,7 @@ const getGradientClasses = (variant: string = 'primary') => {
   const gradients = {
     primary: 'from-[#5564ec] via-[#5564ec] to-[#6632ce]', // Main Shopify gradient
     warm: 'from-[#ff6b6b] via-[#ee5a24] to-[#ff9ff3]', // Orange to pink
-    cool: 'from-[#74b9ff] via-[#0984e3] to-[#6c5ce7]', // Blue to purple
+    cool: 'from-[#5E1628] to-[#ff0050]', // TikTok: Black to neon cyan to neon pink
     accent: 'from-[#00b894] via-[#00cec9] to-[#74b9ff]', // Green to blue
   }
   return gradients[variant as keyof typeof gradients] || gradients.primary
@@ -203,7 +149,7 @@ export default function BentoGrid({ items = itemsSample }: BentoGridProps) {
           >
             <Card
               className={cn(
-                "group relative h-full transition-all duration-500 hover:shadow-2xl",
+                "group relative h-full transition-all duration-200 ease-out hover:shadow-2xl",
                 "hover:-translate-y-1 will-change-transform",
                 "overflow-hidden border-0",
                 "bg-gradient-to-br", getGradientClasses(item.gradientVariant),
@@ -213,12 +159,6 @@ export default function BentoGrid({ items = itemsSample }: BentoGridProps) {
                   "shadow-xl -translate-y-1": item.hasPersistentHover,
                 },
               )}
-              style={{
-                background: `linear-gradient(135deg, ${item.gradientVariant === 'primary' ? '#5564ec, #6632ce' : 
-                  item.gradientVariant === 'warm' ? '#ff6b6b, #ff9ff3' :
-                  item.gradientVariant === 'cool' ? '#74b9ff, #6c5ce7' :
-                  '#00b894, #74b9ff'})`,
-              }}
             >
               {/* Alpha mask texture overlay in top-left corner */}
               <div className="absolute top-0 left-0 w-full h-full opacity-[0.15] pointer-events-none">
@@ -246,14 +186,14 @@ export default function BentoGrid({ items = itemsSample }: BentoGridProps) {
               </div>
 
               {/* Dark overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-150" />
 
               {/* Subtle border glow */}
               <div
                 className={cn(
                   "absolute inset-0 rounded-xl",
                   "bg-gradient-to-br from-white/20 via-transparent to-transparent",
-                  "opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                  "opacity-0 group-hover:opacity-100 transition-opacity duration-150",
                 )}
               />
 
@@ -290,13 +230,13 @@ export default function BentoGrid({ items = itemsSample }: BentoGridProps) {
                     {item.tags?.slice(0, 3).map((tag) => (
                       <span
                         key={`${item.title}-${tag}`}
-                        className="px-2.5 py-1 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10 transition-all duration-200 hover:bg-black/30"
+                        className="px-2.5 py-1 rounded-lg bg-black/20 backdrop-blur-sm border border-white/10 transition-all duration-150 hover:bg-black/30"
                       >
                         #{tag}
                       </span>
                     ))}
                   </div>
-                  <span className="text-xs text-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-xs text-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-150">
                     {item.cta || "View Project →"}
                   </span>
                 </div>
