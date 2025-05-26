@@ -114,7 +114,7 @@ const itemsSample: BentoItem[] = [
     icon: <Linkedin className="w-4 h-4 text-blue-400" />,
     meta: "Social",
     tags: ["LinkedIn", "GitHub", "Email"],
-    href: "https://www.linkedin.com/in/javanwang/",
+    href: "https://x.com/javanwzy/",
     customClassName: "mobile-only",
     gradientVariant: 'cool',
   },
