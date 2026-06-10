@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { NotificationBanner } from '@/components/notification-banner'
 
 export const metadata: Metadata = {
   title: 'Javan Wang - Portfolio',
@@ -36,9 +35,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body suppressHydrationWarning={true} className="dark bg-[rgb(15,5,34)] text-white">
-        <NotificationBanner />
+    <html lang="en">
+      <body suppressHydrationWarning={true} className="bg-white text-black">
         {children}
       </body>
     </html>

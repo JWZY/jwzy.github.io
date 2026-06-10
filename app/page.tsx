@@ -1,7 +1,5 @@
-"use client"
+import Portfolio from "@/components/portfolio"
 
-import BentoGrid from "../components/kokonutui/bento-grid"
-
-export default function SyntheticV0PageForDeployment() {
-  return <BentoGrid />
+export default function Home() {
+  return <Portfolio />
 }
