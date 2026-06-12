@@ -46,9 +46,15 @@ const sections: Section[] = [
         external: true,
       },
       {
-        year: "2025",
+        year: "2024",
         label: "TikTok x Shopify Checkout",
-        href: "https://ads.tiktok.com/help/article/about-in-app-shopify-checkout-experience-tiktok",
+        href: "https://www.shopify.com/ca/partners/blog/checkout-sheet-protocol-for-partners",
+        external: true,
+      },
+      {
+        year: "2024",
+        label: "Shopify Checkout Sheet",
+        href: "https://www.shopify.com/ca/checkout-kit",
         external: true,
       },
     ],
