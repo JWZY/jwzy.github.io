@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Single font — Inter, one weight only */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /* ONE font, ONE size, ONE weight, ONE style — everywhere. Do not deviate. */
 body,
